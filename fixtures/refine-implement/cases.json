@@ -1,0 +1,155 @@
+{
+  "version": "p6-simulator-1",
+  "cases": [
+    {
+      "id": "ready",
+      "mode": "refine",
+      "expect": "READY"
+    },
+    {
+      "id": "needs_input",
+      "mode": "refine",
+      "expect": "NEEDS_INPUT"
+    },
+    {
+      "id": "blocked",
+      "mode": "refine",
+      "expect": "BLOCKED"
+    },
+    {
+      "id": "save",
+      "mode": "refine",
+      "expect": "READY"
+    },
+    {
+      "id": "handoff",
+      "mode": "implement",
+      "expect": "GO"
+    },
+    {
+      "id": "authority_absent",
+      "mode": "implement",
+      "expect": "authority"
+    },
+    {
+      "id": "authority_revision",
+      "mode": "implement",
+      "expect": "authority"
+    },
+    {
+      "id": "authority_root",
+      "mode": "implement",
+      "expect": "authority"
+    },
+    {
+      "id": "authority_path",
+      "mode": "implement",
+      "expect": "authority"
+    },
+    {
+      "id": "authority_operation",
+      "mode": "implement",
+      "expect": "authority"
+    },
+    {
+      "id": "baseline_head",
+      "mode": "implement",
+      "expect": "baseline"
+    },
+    {
+      "id": "baseline_index",
+      "mode": "implement",
+      "expect": "baseline"
+    },
+    {
+      "id": "baseline_worktree",
+      "mode": "implement",
+      "expect": "baseline"
+    },
+    {
+      "id": "scope",
+      "mode": "implement",
+      "expect": "scope"
+    },
+    {
+      "id": "late_scope",
+      "mode": "implement",
+      "expect": "scope"
+    },
+    {
+      "id": "missing_criterion",
+      "mode": "implement",
+      "expect": "contract"
+    },
+    {
+      "id": "verification_fail",
+      "mode": "implement",
+      "expect": "FAIL"
+    },
+    {
+      "id": "verification_missing",
+      "mode": "implement",
+      "expect": "BLOCKED"
+    },
+    {
+      "id": "early",
+      "mode": "probe",
+      "expect": "deny"
+    },
+    {
+      "id": "child",
+      "mode": "child",
+      "expect": "deny"
+    },
+    {
+      "id": "outside",
+      "mode": "probe",
+      "expect": "deny"
+    },
+    {
+      "id": "directory",
+      "mode": "probe",
+      "expect": "deny"
+    },
+    {
+      "id": "metadata",
+      "mode": "probe",
+      "expect": "deny"
+    },
+    {
+      "id": "index",
+      "mode": "probe",
+      "expect": "deny"
+    },
+    {
+      "id": "transient",
+      "mode": "probe",
+      "expect": "restore"
+    },
+    {
+      "id": "dropped",
+      "mode": "probe",
+      "expect": "BLOCKED"
+    },
+    {
+      "id": "contract_digest",
+      "mode": "implement",
+      "expect": "contract"
+    },
+    {
+      "id": "invalid_go",
+      "mode": "probe",
+      "expect": "deny"
+    },
+    {
+      "id": "gap",
+      "mode": "probe",
+      "expect": "BLOCKED"
+    },
+    {
+      "id": "malformed",
+      "mode": "probe",
+      "expect": "BLOCKED"
+    }
+  ]
+}

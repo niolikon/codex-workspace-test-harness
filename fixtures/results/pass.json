@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case_id": "synthetic-pass",
+  "mode": "offline",
+  "provenance": {
+    "fixture_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "product_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "oracle_revision": "synthetic-foundation-v1"
+  },
+  "evidence": [],
+  "dimensions": {
+    "preflight": {
+      "status": "PASS",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "completion": {
+      "status": "PASS",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "tool_use": {
+      "status": "PASS",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "evidence_integrity": {
+      "status": "PASS",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "semantic_accuracy": {
+      "status": "PASS",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "requirement_coverage": {
+      "status": "PASS",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "provenance": {
+      "status": "PASS",
+      "reason": "Illustrative structural record only; no workflow executed."
+    }
+  },
+  "overall": {
+    "status": "PASS",
+    "reason": "Synthetic example, not an observed workflow result."
+  }
+}

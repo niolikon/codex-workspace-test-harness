@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case_id": "synthetic-fail",
+  "mode": "offline",
+  "provenance": {
+    "fixture_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "product_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "oracle_revision": "synthetic-foundation-v1"
+  },
+  "evidence": [],
+  "dimensions": {
+    "preflight": {
+      "status": "FAIL",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "completion": {
+      "status": "FAIL",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "tool_use": {
+      "status": "FAIL",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "evidence_integrity": {
+      "status": "FAIL",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "semantic_accuracy": {
+      "status": "FAIL",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "requirement_coverage": {
+      "status": "FAIL",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "provenance": {
+      "status": "FAIL",
+      "reason": "Illustrative structural record only; no workflow executed."
+    }
+  },
+  "overall": {
+    "status": "FAIL",
+    "reason": "Synthetic example, not an observed workflow result."
+  }
+}

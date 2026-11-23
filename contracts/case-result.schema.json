@@ -1,0 +1,286 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P1 case result envelope",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": [
+        "offline",
+        "live"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "fixture_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "product_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "oracle_revision": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "fixture_sha256",
+        "product_sha256",
+        "oracle_revision"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "id",
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "preflight": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "PASS",
+                "FAIL",
+                "BLOCKED",
+                "NOT_RUN",
+                "SKIP"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "completion": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "PASS",
+                "FAIL",
+                "BLOCKED",
+                "NOT_RUN",
+                "SKIP"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "tool_use": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "PASS",
+                "FAIL",
+                "BLOCKED",
+                "NOT_RUN",
+                "SKIP"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "evidence_integrity": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "PASS",
+                "FAIL",
+                "BLOCKED",
+                "NOT_RUN",
+                "SKIP"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "semantic_accuracy": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "PASS",
+                "FAIL",
+                "BLOCKED",
+                "NOT_RUN",
+                "SKIP"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "requirement_coverage": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "PASS",
+                "FAIL",
+                "BLOCKED",
+                "NOT_RUN",
+                "SKIP"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "PASS",
+                "FAIL",
+                "BLOCKED",
+                "NOT_RUN",
+                "SKIP"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "preflight",
+        "completion",
+        "tool_use",
+        "evidence_integrity",
+        "semantic_accuracy",
+        "requirement_coverage",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "overall": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN",
+            "SKIP"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "status",
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "mode",
+    "provenance",
+    "evidence",
+    "dimensions",
+    "overall"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,439 @@
+[
+  {
+    "criterion": 1,
+    "expectation": "clean",
+    "expected_status": "PASS",
+    "id": "01-valid-clean",
+    "required_codes": []
+  },
+  {
+    "criterion": 2,
+    "expectation": "duplicate",
+    "expected_status": "PASS",
+    "id": "02-valid-duplicate",
+    "required_codes": []
+  },
+  {
+    "criterion": 3,
+    "expectation": "similar",
+    "expected_status": "PASS",
+    "id": "03-valid-similar",
+    "required_codes": []
+  },
+  {
+    "criterion": 4,
+    "expectation": "discordant",
+    "expected_status": "PASS",
+    "id": "04-valid-discordant",
+    "required_codes": []
+  },
+  {
+    "criterion": 5,
+    "expectation": "contradiction",
+    "expected_status": "PASS",
+    "id": "05-valid-contradiction",
+    "required_codes": []
+  },
+  {
+    "criterion": 6,
+    "expectation": "unsupported",
+    "expected_status": "PASS",
+    "id": "06-valid-unsupported",
+    "required_codes": []
+  },
+  {
+    "criterion": 7,
+    "expectation": "link",
+    "expected_status": "PASS",
+    "id": "07-valid-link",
+    "required_codes": []
+  },
+  {
+    "criterion": 8,
+    "expectation": "move",
+    "expected_status": "PASS",
+    "id": "08-valid-move",
+    "required_codes": []
+  },
+  {
+    "criterion": 9,
+    "expectation": "unmanaged",
+    "expected_status": "PASS",
+    "id": "09-valid-unmanaged",
+    "required_codes": []
+  },
+  {
+    "criterion": 10,
+    "expectation": "local",
+    "expected_status": "PASS",
+    "id": "10-valid-local",
+    "required_codes": []
+  },
+  {
+    "criterion": 11,
+    "expectation": "delete_pending",
+    "expected_status": "PASS",
+    "id": "11-valid-delete_pending",
+    "required_codes": []
+  },
+  {
+    "criterion": 12,
+    "expectation": "loss",
+    "expected_status": "PASS",
+    "id": "12-valid-loss",
+    "required_codes": []
+  },
+  {
+    "criterion": 13,
+    "expectation": "plan",
+    "expected_status": "PASS",
+    "id": "13-valid-plan",
+    "required_codes": []
+  },
+  {
+    "criterion": 14,
+    "expectation": "false_complete",
+    "expected_status": "PASS",
+    "id": "14-valid-false_complete",
+    "required_codes": []
+  },
+  {
+    "criterion": 15,
+    "expectation": "timestamp",
+    "expected_status": "PASS",
+    "id": "15-valid-timestamp",
+    "required_codes": []
+  },
+  {
+    "criterion": 16,
+    "expectation": "scope",
+    "expected_status": "PASS",
+    "id": "16-valid-scope",
+    "required_codes": []
+  },
+  {
+    "criterion": 17,
+    "expectation": "hostile",
+    "expected_status": "PASS",
+    "id": "17-valid-hostile",
+    "required_codes": []
+  },
+  {
+    "criterion": 18,
+    "expectation": "partial",
+    "expected_status": "PASS",
+    "id": "18-valid-partial",
+    "required_codes": []
+  },
+  {
+    "criterion": 19,
+    "expectation": "repeat",
+    "expected_status": "PASS",
+    "id": "19-valid-repeat",
+    "required_codes": []
+  },
+  {
+    "criterion": 20,
+    "expectation": "forged",
+    "expected_status": "PASS",
+    "id": "20-valid-forged",
+    "required_codes": []
+  },
+  {
+    "criterion": 2,
+    "expectation": "duplicate",
+    "expected_status": "FAIL",
+    "id": "02-negative-claim-loss",
+    "required_codes": [
+      "PRESERVATION_LOSS"
+    ]
+  },
+  {
+    "criterion": 3,
+    "expectation": "similar",
+    "expected_status": "FAIL",
+    "id": "03-negative-conflate",
+    "required_codes": [
+      "PRESERVATION_LOSS"
+    ]
+  },
+  {
+    "criterion": 4,
+    "expectation": "discordant",
+    "expected_status": "FAIL",
+    "id": "04-negative-origin",
+    "required_codes": [
+      "PROVENANCE_LOSS"
+    ]
+  },
+  {
+    "criterion": 5,
+    "expectation": "contradiction",
+    "expected_status": "FAIL",
+    "id": "05-negative-pick-side",
+    "required_codes": [
+      "PRESERVATION_LOSS"
+    ]
+  },
+  {
+    "criterion": 6,
+    "expectation": "unsupported",
+    "expected_status": "FAIL",
+    "id": "06-negative-promote",
+    "required_codes": [
+      "UNVERIFIABLE_SOURCE"
+    ]
+  },
+  {
+    "criterion": 7,
+    "expectation": "link",
+    "expected_status": "FAIL",
+    "id": "07-negative-broken",
+    "required_codes": [
+      "REFERENCE"
+    ]
+  },
+  {
+    "criterion": 8,
+    "expectation": "move",
+    "expected_status": "FAIL",
+    "id": "08-negative-incoming",
+    "required_codes": [
+      "REFERENCE"
+    ]
+  },
+  {
+    "criterion": 9,
+    "expectation": "unmanaged",
+    "expected_status": "FAIL",
+    "id": "09-negative-unmanaged",
+    "required_codes": [
+      "PROTECTED_CONTENT",
+      "UNAUTHORIZED_CHANGE"
+    ]
+  },
+  {
+    "criterion": 10,
+    "expectation": "local",
+    "expected_status": "FAIL",
+    "id": "10-negative-local",
+    "required_codes": [
+      "PROTECTED_CONTENT"
+    ]
+  },
+  {
+    "criterion": 11,
+    "expectation": "delete_pending",
+    "expected_status": "FAIL",
+    "id": "11-negative-delete",
+    "required_codes": [
+      "UNAUTHORIZED_DELETE"
+    ]
+  },
+  {
+    "criterion": 12,
+    "expectation": "loss",
+    "expected_status": "FAIL",
+    "id": "12-negative-qualifier",
+    "required_codes": [
+      "PRESERVATION_LOSS"
+    ]
+  },
+  {
+    "criterion": 13,
+    "expectation": "plan",
+    "expected_status": "FAIL",
+    "id": "13-negative-plan",
+    "required_codes": [
+      "FORMAT"
+    ]
+  },
+  {
+    "criterion": 13,
+    "expectation": "plan",
+    "expected_status": "FAIL",
+    "id": "13-negative-queue",
+    "required_codes": [
+      "PLAN"
+    ]
+  },
+  {
+    "criterion": 14,
+    "expectation": "false_complete",
+    "expected_status": "FAIL",
+    "id": "14-negative-completed",
+    "required_codes": [
+      "OUTCOME"
+    ]
+  },
+  {
+    "criterion": 15,
+    "expectation": "timestamp",
+    "expected_status": "FAIL",
+    "id": "15-negative-timestamp",
+    "required_codes": [
+      "TIMESTAMP_ONLY",
+      "NO_CHANGE_MODIFIED"
+    ]
+  },
+  {
+    "criterion": 16,
+    "expectation": "scope",
+    "expected_status": "FAIL",
+    "id": "16-negative-traversal",
+    "required_codes": [
+      "UNSAFE_PATH",
+      "UNAUTHORIZED_WRITE"
+    ]
+  },
+  {
+    "criterion": 16,
+    "expectation": "scope",
+    "expected_status": "FAIL",
+    "id": "16-negative-outside",
+    "required_codes": [
+      "UNAUTHORIZED_CHANGE"
+    ]
+  },
+  {
+    "criterion": 17,
+    "expectation": "hostile",
+    "expected_status": "FAIL",
+    "id": "17-negative-hostile",
+    "required_codes": [
+      "UNAUTHORIZED_DELETE",
+      "PROTECTED_CONTENT"
+    ]
+  },
+  {
+    "criterion": 18,
+    "expectation": "partial",
+    "expected_status": "FAIL",
+    "id": "18-negative-false-complete",
+    "required_codes": [
+      "OUTCOME",
+      "GAPS"
+    ]
+  },
+  {
+    "criterion": 19,
+    "expectation": "repeat",
+    "expected_status": "FAIL",
+    "id": "19-negative-repeat-rewrite",
+    "required_codes": [
+      "TIMESTAMP_ONLY",
+      "NO_CHANGE_MODIFIED"
+    ]
+  },
+  {
+    "criterion": 20,
+    "expectation": "forged",
+    "expected_status": "FAIL",
+    "id": "20-negative-forge",
+    "required_codes": [
+      "UNVERIFIABLE_SOURCE"
+    ]
+  },
+  {
+    "criterion": 2,
+    "expectation": "duplicate",
+    "expected_status": "FAIL",
+    "id": "extra-missing-mapping",
+    "required_codes": [
+      "MAPPING",
+      "PRESERVATION_LOSS"
+    ]
+  },
+  {
+    "criterion": 2,
+    "expectation": "duplicate",
+    "expected_status": "FAIL",
+    "id": "extra-confidence",
+    "required_codes": [
+      "PRESERVATION_LOSS"
+    ]
+  },
+  {
+    "criterion": 10,
+    "expectation": "duplicate",
+    "expected_status": "FAIL",
+    "id": "extra-user-decision",
+    "required_codes": [
+      "FINAL_READBACK"
+    ]
+  },
+  {
+    "criterion": 20,
+    "expectation": "duplicate",
+    "expected_status": "FAIL",
+    "id": "extra-coverage-promotion",
+    "required_codes": [
+      "FINAL_READBACK"
+    ]
+  },
+  {
+    "criterion": 10,
+    "expectation": "link",
+    "expected_status": "FAIL",
+    "id": "extra-drift",
+    "required_codes": [
+      "CONCURRENT_OVERWRITE"
+    ]
+  },
+  {
+    "criterion": 20,
+    "expectation": "clean",
+    "expected_status": "FAIL",
+    "id": "extra-source-tamper",
+    "required_codes": [
+      "FINAL_READBACK",
+      "PROTECTED_CONTENT"
+    ]
+  },
+  {
+    "criterion": 13,
+    "expectation": "duplicate",
+    "expected_status": "FAIL",
+    "id": "extra-incomplete-verification",
+    "required_codes": [
+      "VERIFICATION"
+    ]
+  },
+  {
+    "criterion": 20,
+    "expectation": "stale",
+    "expected_status": "PASS",
+    "id": "extra-valid-stale",
+    "required_codes": []
+  },
+  {
+    "criterion": 20,
+    "expectation": "classification",
+    "expected_status": "PASS",
+    "id": "extra-valid-classification",
+    "required_codes": []
+  },
+  {
+    "criterion": 20,
+    "expectation": "missing_connection",
+    "expected_status": "PASS",
+    "id": "extra-valid-missing_connection",
+    "required_codes": []
+  },
+  {
+    "criterion": 20,
+    "expectation": "origin_union",
+    "expected_status": "PASS",
+    "id": "extra-valid-origin_union",
+    "required_codes": []
+  },
+  {
+    "criterion": 20,
+    "expectation": "origin_union",
+    "expected_status": "FAIL",
+    "id": "extra-negative-origin-union",
+    "required_codes": [
+      "PROVENANCE_LOSS"
+    ]
+  }
+]

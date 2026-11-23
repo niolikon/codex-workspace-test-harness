@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case_id": "synthetic-skip",
+  "mode": "offline",
+  "provenance": {
+    "fixture_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "product_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "oracle_revision": "synthetic-foundation-v1"
+  },
+  "evidence": [],
+  "dimensions": {
+    "preflight": {
+      "status": "SKIP",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "completion": {
+      "status": "SKIP",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "tool_use": {
+      "status": "SKIP",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "evidence_integrity": {
+      "status": "SKIP",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "semantic_accuracy": {
+      "status": "SKIP",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "requirement_coverage": {
+      "status": "SKIP",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "provenance": {
+      "status": "SKIP",
+      "reason": "Illustrative structural record only; no workflow executed."
+    }
+  },
+  "overall": {
+    "status": "SKIP",
+    "reason": "Synthetic example, not an observed workflow result."
+  }
+}

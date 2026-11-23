@@ -1,0 +1,63 @@
+{
+  "format": "p5b1-synthetic-v1",
+  "scope": "lantern-pilot",
+  "reads": [
+    "subject/sources/service.json",
+    "subject/sources/decision.json",
+    "subject/sources/hostile.txt"
+  ],
+  "writes": [
+    "subject/knowledge/baseline.md"
+  ],
+  "claims": [
+    {
+      "key": "service",
+      "value": "Lantern",
+      "kind": "observed",
+      "source": "service-spec",
+      "ref": "service",
+      "revision": "fixture-r3",
+      "digest": "7733af45427777d4014b06e9fbf1769466b31e8667613b33ef563e7bd1296c60"
+    },
+    {
+      "key": "status",
+      "value": "unknown",
+      "kind": "observed",
+      "source": "service-spec",
+      "ref": "status",
+      "revision": "fixture-r3",
+      "digest": "7733af45427777d4014b06e9fbf1769466b31e8667613b33ef563e7bd1296c60"
+    },
+    {
+      "key": "forecast",
+      "value": "20",
+      "kind": "assumption",
+      "source": "service-spec",
+      "ref": "forecast",
+      "revision": "fixture-r3",
+      "digest": "7733af45427777d4014b06e9fbf1769466b31e8667613b33ef563e7bd1296c60"
+    }
+  ],
+  "decisions": [
+    {
+      "key": "launch_scope",
+      "value": "pilot",
+      "kind": "user_decision",
+      "source": "user-decision",
+      "ref": "launch_scope",
+      "revision": "fixture-d1",
+      "digest": "effc65c9879a1828f9ba44d2a77c75db88f323bed07a331c7ef7f31e616dfc98"
+    }
+  ],
+  "coverage": {
+    "service": "supported",
+    "status": "supported",
+    "forecast": "supported",
+    "launch_scope": "supported"
+  },
+  "gaps": [],
+  "outcome": "COMPLETED",
+  "links": [
+    "subject/knowledge/baseline.md#baseline"
+  ]
+}

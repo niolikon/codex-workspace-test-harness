@@ -1,0 +1,17 @@
+{
+  "WI101": {
+    "id": "WI-101",
+    "source": "WI-101@1#export-setting",
+    "target_value": "enabled"
+  },
+  "WI102": {
+    "id": "WI-102",
+    "source": "WI-102@1#timeout",
+    "target_value": null
+  },
+  "WI103": {
+    "id": "WI-103",
+    "source": "WI-103@1#missing-checkout",
+    "target_value": "enabled"
+  }
+}

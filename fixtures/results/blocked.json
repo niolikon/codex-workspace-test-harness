@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case_id": "synthetic-blocked",
+  "mode": "offline",
+  "provenance": {
+    "fixture_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "product_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "oracle_revision": "synthetic-foundation-v1"
+  },
+  "evidence": [],
+  "dimensions": {
+    "preflight": {
+      "status": "BLOCKED",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "completion": {
+      "status": "BLOCKED",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "tool_use": {
+      "status": "BLOCKED",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "evidence_integrity": {
+      "status": "BLOCKED",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "semantic_accuracy": {
+      "status": "BLOCKED",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "requirement_coverage": {
+      "status": "BLOCKED",
+      "reason": "Illustrative structural record only; no workflow executed."
+    },
+    "provenance": {
+      "status": "BLOCKED",
+      "reason": "Illustrative structural record only; no workflow executed."
+    }
+  },
+  "overall": {
+    "status": "BLOCKED",
+    "reason": "Synthetic example, not an observed workflow result."
+  }
+}

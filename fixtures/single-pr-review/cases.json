@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "root_fixture": "F0",
+  "selection": {
+    "work_item": "SAMPLE-17",
+    "repository": "sample/text-export",
+    "pr": "12",
+    "algorithm": "synthetic",
+    "base": "snapshot:base-a",
+    "head": "snapshot:head-a"
+  },
+  "context": {
+    "session": "s1",
+    "generation": 1,
+    "action": "persist_local_review",
+    "destination": "session_data/reviews"
+  },
+  "alternative": {
+    "work_item": "SAMPLE-17",
+    "repository": "sample/text-export",
+    "pr": "13",
+    "algorithm": "synthetic",
+    "base": "snapshot:base-b",
+    "head": "snapshot:head-b"
+  },
+  "unrelated": {
+    "work_item": "SAMPLE-99",
+    "repository": "sample/text-export",
+    "pr": "21",
+    "algorithm": "synthetic",
+    "base": "snapshot:base-c",
+    "head": "snapshot:head-c"
+  },
+  "sentinel": "RV-02 immutable sentinel\n",
+  "cases": [
+    {
+      "id": "P8-POS",
+      "mutation": "none"
+    },
+    {
+      "id": "P8-LINK-ITEM",
+      "mutation": "select_other_item_pr"
+    },
+    {
+      "id": "P8-LINK-REPO",
+      "mutation": "select_other_repo"
+    },
+    {
+      "id": "P8-MISSING-PR",
+      "mutation": "omit_selected_pr"
+    },
+    {
+      "id": "P8-MISSING-LINK",
+      "mutation": "omit_association"
+    },
+    {
+      "id": "P8-MISSING-HEAD",
+      "mutation": "omit_head"
+    },
+    {
+      "id": "P8-MISSING-AMBIG",
+      "mutation": "duplicate_association"
+    },
+    {
+      "id": "P8-SCOPE-ACTION",
+      "mutation": "foreign_action"
+    },
+    {
+      "id": "P8-SCOPE-DEST",
+      "mutation": "outside_destination"
+    },
+    {
+      "id": "P8-SCOPE-SOURCES",
+      "mutation": "replace_source_allowlist"
+    },
+    {
+      "id": "P8-SCOPE-SECOND",
+      "mutation": "request_other_pr_source"
+    },
+    {
+      "id": "P8-CONSENT-ABSENT",
+      "mutation": "no_receipt"
+    },
+    {
+      "id": "P8-CONSENT-DENY",
+      "mutation": "deny_receipt"
+    },
+    {
+      "id": "P8-CONSENT-DIGEST",
+      "mutation": "wrong_preview_digest"
+    },
+    {
+      "id": "P8-CONSENT-EARLY",
+      "mutation": "receipt_before_preview"
+    },
+    {
+      "id": "P8-CONSENT-EARLY-MTIME",
+      "mutation": "backdate_bound_receipt"
+    },
+    {
+      "id": "P8-CONSENT-DUPLICATE",
+      "mutation": "duplicate_receipt_field"
+    },
+    {
+      "id": "P8-CONSENT-MISSING",
+      "mutation": "missing_receipt_field"
+    },
+    {
+      "id": "P8-CONSENT-UNKNOWN",
+      "mutation": "unknown_receipt_field"
+    },
+    {
+      "id": "P8-SHA-BASE",
+      "mutation": "rotate_base"
+    },
+    {
+      "id": "P8-SHA-HEAD",
+      "mutation": "rotate_head"
+    },
+    {
+      "id": "P8-SESSION-ROTATE",
+      "mutation": "rotate_session"
+    },
+    {
+      "id": "P8-SESSION-RESUME",
+      "mutation": "resume_session"
+    },
+    {
+      "id": "P8-REPLAY-PROCESS",
+      "mutation": "replay_after_success"
+    },
+    {
+      "id": "P8-REPLAY-RACE",
+      "mutation": "concurrent_replay"
+    },
+    {
+      "id": "P8-REPLAY-FAULT",
+      "mutation": "fail_after_claim"
+    },
+    {
+      "id": "P8-VERDICT-CONTRADICTION",
+      "mutation": "contradiction"
+    },
+    {
+      "id": "P8-VERDICT-INCOMPLETE",
+      "mutation": "missing_coverage"
+    },
+    {
+      "id": "P8-VERDICT-REJECTED",
+      "mutation": "false_claim"
+    }
+  ]
+}

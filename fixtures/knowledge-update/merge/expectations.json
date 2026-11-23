@@ -1,0 +1,998 @@
+{
+  "authorized-path": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "contradictory-sources": {
+    "claims": [],
+    "classifications": {
+      "attempts": "contradictory"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "5e18a05fd4d7ffa41aaefb597eaef501de4fe064c1261393b32efd0fac901ae8",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/policy.json": "d08f43c72d05adf0583ad37bc96dc3a72a7be8c94525ffad94731a949108f1a5",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [
+      "resolve applicable retry policy"
+    ],
+    "links": [],
+    "outcome": "NEEDS_INPUT",
+    "protected_paths": {
+      "knowledge-base/billing.md": "UNRESOLVED_SOURCE_CONFLICT"
+    },
+    "scope": "billing/retry",
+    "sources": {
+      "sources/policy.json": {
+        "digest": "d08f43c72d05adf0583ad37bc96dc3a72a7be8c94525ffad94731a949108f1a5",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "2"
+          }
+        },
+        "revision": "policy7"
+      },
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "decision-required": {
+    "claims": [],
+    "classifications": {
+      "attempts": "contradictory"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "5e18a05fd4d7ffa41aaefb597eaef501de4fe064c1261393b32efd0fac901ae8",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/policy.json": "d08f43c72d05adf0583ad37bc96dc3a72a7be8c94525ffad94731a949108f1a5",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [
+      "user policy decision unavailable"
+    ],
+    "links": [],
+    "outcome": "NEEDS_INPUT",
+    "protected_paths": {
+      "knowledge-base/billing.md": "DECISION_DEPENDENT_WRITE"
+    },
+    "scope": "billing/retry",
+    "sources": {
+      "sources/policy.json": {
+        "digest": "d08f43c72d05adf0583ad37bc96dc3a72a7be8c94525ffad94731a949108f1a5",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "2"
+          }
+        },
+        "revision": "policy7"
+      },
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "drift-stopped": {
+    "claims": [],
+    "classifications": {
+      "attempts": "insufficiently supported"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "4ca4a9fae101a0531d00447c5499f48d4def05d9bb5a2c65e189ce4fc7affa5f",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [
+      "target drift"
+    ],
+    "links": [],
+    "outcome": "BLOCKED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "hostile-source-ignored": {
+    "claims": [
+      {
+        "digest": "8ab2d0815f602ad2cc15b5f09087f9b36545d4344ecf7f692065228118e9c016",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "8ab2d0815f602ad2cc15b5f09087f9b36545d4344ecf7f692065228118e9c016"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "8ab2d0815f602ad2cc15b5f09087f9b36545d4344ecf7f692065228118e9c016",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "independent-partial": {
+    "claims": [
+      {
+        "digest": "44b80b65d752b17e14132d02a8d889af85fc5f41ea281897c8505403e62990b2",
+        "kind": "fact",
+        "ref": "timeout",
+        "revision": "t2",
+        "source": "sources/transport.json",
+        "value": "20"
+      }
+    ],
+    "classifications": {
+      "attempts": "contradictory",
+      "timeout": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "5e18a05fd4d7ffa41aaefb597eaef501de4fe064c1261393b32efd0fac901ae8",
+        "knowledge-base/transport.md": "09adc75e5c5821de915dfab6209460b214f4ceb96e5964d7bb930be39bbd5561",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/policy.json": "d08f43c72d05adf0583ad37bc96dc3a72a7be8c94525ffad94731a949108f1a5",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "sources/transport.json": "44b80b65d752b17e14132d02a8d889af85fc5f41ea281897c8505403e62990b2"
+      }
+    },
+    "gaps": [
+      "NEEDS_INPUT: retry policy"
+    ],
+    "links": [
+      "sources/transport.json#timeout"
+    ],
+    "outcome": "PARTIAL",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/policy.json": {
+        "digest": "d08f43c72d05adf0583ad37bc96dc3a72a7be8c94525ffad94731a949108f1a5",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "2"
+          }
+        },
+        "revision": "policy7"
+      },
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      },
+      "sources/transport.json": {
+        "digest": "44b80b65d752b17e14132d02a8d889af85fc5f41ea281897c8505403e62990b2",
+        "facts": {
+          "timeout": {
+            "kind": "fact",
+            "value": "20"
+          }
+        },
+        "revision": "t2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/transport.md"
+    ]
+  },
+  "local-edits": {
+    "claims": [],
+    "classifications": {
+      "attempts": "contradictory"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "9ce7a0da515f9adf0248df2c38cf3a2ba182e86f8cab73d24a194d20878c600a",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [
+      "resolve local override"
+    ],
+    "links": [],
+    "outcome": "NEEDS_INPUT",
+    "protected_paths": {
+      "knowledge-base/billing.md": "LOCAL_EDIT_OVERWRITE"
+    },
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "missing-source": {
+    "claims": [],
+    "classifications": {
+      "attempts": "insufficiently supported"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "5e18a05fd4d7ffa41aaefb597eaef501de4fe064c1261393b32efd0fac901ae8",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f"
+      }
+    },
+    "gaps": [
+      "primary source unavailable"
+    ],
+    "links": [],
+    "outcome": "BLOCKED",
+    "protected_paths": {
+      "knowledge-base/billing.md": "MISSING_SOURCE_BASELINE_LOSS"
+    },
+    "scope": "billing/retry",
+    "sources": {},
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "modified-source": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "new-information": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      },
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "backoff",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "exponential"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed",
+      "backoff": "new"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "4149f504a5f7fee80e4dd4c4cb47a377ae3c952556f69dd8a968785d8ce4baba",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts",
+      "sources/primary.json#backoff"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "no-baseline": {
+    "claims": [],
+    "classifications": {},
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [
+      "baseline absent; suggest knowledge-init"
+    ],
+    "links": [],
+    "outcome": "BLOCKED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": []
+  },
+  "no-change": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "confirmed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "NO_CHANGE",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "obsolete-positive-evidence": {
+    "claims": [
+      {
+        "digest": "068667803eaf18b6126b64dcd359a739d3aa88b561ae319cf7531d7320532573",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r3",
+        "source": "sources/primary.json",
+        "value": "disabled"
+      }
+    ],
+    "classifications": {
+      "attempts": "obsolete"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "b40b0501b450447389b5ef836d444b4fe4019393c2d0424a40f4ff33cb40c82d",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "068667803eaf18b6126b64dcd359a739d3aa88b561ae319cf7531d7320532573"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "068667803eaf18b6126b64dcd359a739d3aa88b561ae319cf7531d7320532573",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "disabled"
+          }
+        },
+        "revision": "r3"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "repeat-update": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "confirmed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "NO_CHANGE",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "supported-claim": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "supported-update": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "unmanaged-preserved": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "verified-provenance": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  },
+  "verified-readback": {
+    "claims": [
+      {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "kind": "fact",
+        "ref": "attempts",
+        "revision": "r2",
+        "source": "sources/primary.json",
+        "value": "3"
+      }
+    ],
+    "classifications": {
+      "attempts": "changed"
+    },
+    "decisions": [],
+    "final_snapshot": {
+      "directories": [
+        "knowledge-base",
+        "notes",
+        "sources"
+      ],
+      "files": {
+        "knowledge-base/billing.md": "1da94e306900b3ee5b717f4c5276ee4ba497ecd4280d2f62265cfabbf18aa517",
+        "notes/unmanaged.md": "0f755347fc04e730c1652aa008e28957369339ff3a269315c0405a8bed2e5c4f",
+        "sources/primary.json": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27"
+      }
+    },
+    "gaps": [],
+    "links": [
+      "sources/primary.json#attempts"
+    ],
+    "outcome": "COMPLETED",
+    "scope": "billing/retry",
+    "sources": {
+      "sources/primary.json": {
+        "digest": "a12da17cf99c2edc5796779c08fc957d8829773982624b76d50ee0b8e951ae27",
+        "facts": {
+          "attempts": {
+            "kind": "fact",
+            "value": "3"
+          },
+          "backoff": {
+            "kind": "fact",
+            "value": "exponential"
+          }
+        },
+        "revision": "r2"
+      }
+    },
+    "write_paths": [
+      "knowledge-base/billing.md"
+    ]
+  }
+}

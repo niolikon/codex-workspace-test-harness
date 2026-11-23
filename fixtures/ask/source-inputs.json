@@ -1,0 +1,6 @@
+{
+  "files": {
+    "documents/spec.md": "# Specifica del servizio — v2 approvata\nTTL: 60 s\nResponsabile: Team Blu\n",
+    "documents/service.py": "TTL_SECONDS = 60\n"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "fixtures/knowledge-curate/deduplication/expectations.json": "942b1f946cd0bbba91fd2d569cad09755d53810aacf59c34540c5791b4dfa9e1",
+  "fixtures/knowledge-curate/deduplication/inputs.json": "d804b95a8f321db4b63170b7cf9150c8deb18a7befa27342b1f83c6c0f67340c",
+  "fixtures/knowledge-curate/deduplication/scenarios.json": "e3caf373cf14d709385bfeb62c0cdf64e8687b44a886beab72cffaaf008bfb36"
+}

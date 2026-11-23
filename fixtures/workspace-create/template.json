@@ -1,0 +1,12 @@
+{
+  "description": "P2 synthetic files added only to disposable template copies",
+  "files_hex": {
+    "notes/binary.dat": "0001020d0afffe7f",
+    "notes/line endings.txt": "4c460a43524c460d0a6e6f2066696e616c206e65776c696e65",
+    ".hidden": "68696464656e0a",
+    ".codex/agents/synthetic.toml": "232053796e74686574696320636f707920666978747572650a"
+  },
+  "unicode_path": "notes/caffè 日本語.txt",
+  "unicode_text": "Synthetic Unicode content: è 日本語\n",
+  "empty_directory": "notes/empty directory"
+}

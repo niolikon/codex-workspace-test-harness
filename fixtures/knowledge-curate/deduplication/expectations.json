@@ -1,0 +1,2951 @@
+{
+  "classification": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "retained",
+        "documents": [
+          "knowledge/a.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Retain meaningful distinction",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "classification",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "clean": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "NO_CHANGE",
+    "plan": [],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "contradiction": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "7e81910471c23f4492a6896ba85f57115a5a31c9150ad40016e2f759df8086ca",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "policy decision unavailable"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/b.json#request"
+    },
+    "outcome": "NEEDS_INPUT",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "ambiguous",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Preserve original and report",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "contradiction",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "60 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "delete_pending": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "deletion not authorized"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/b.json#request"
+    },
+    "outcome": "NEEDS_INPUT",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "ambiguous",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Propose deletion; preserve pending consent",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "duplicate",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "discordant": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "7eff825d56d7c49787e3e9708e76e64036a14eeb1b0145e64ee2d9383f6cf785",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "unavailable origin; preserve both"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/b.json#request"
+    },
+    "outcome": "BLOCKED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "blocked",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Preserve original and report",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "discordant provenance",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "unverified",
+            "path": "sources/unavailable.json",
+            "ref": "request",
+            "revision": "legacy",
+            "status": "unverified"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "duplicate": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "248131dee7f59f05c588033f44aabf42929fb5c7922718ff5a51497589361b37",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "curated",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Consolidate equivalent claim; retain document and link",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "duplicate",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": [
+      "knowledge/b.json"
+    ]
+  },
+  "false_complete": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "7eff825d56d7c49787e3e9708e76e64036a14eeb1b0145e64ee2d9383f6cf785",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "unverifiable origin"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "BLOCKED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "blocked",
+        "documents": [
+          "knowledge/a.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Preserve original and report",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "unverifiable provenance",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "unverified",
+            "path": "sources/unavailable.json",
+            "ref": "request",
+            "revision": "legacy",
+            "status": "unverified"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "forged": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "7eff825d56d7c49787e3e9708e76e64036a14eeb1b0145e64ee2d9383f6cf785",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "unverifiable origin"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "BLOCKED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "blocked",
+        "documents": [
+          "knowledge/a.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Preserve original and report",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "unverifiable provenance",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "unverified",
+            "path": "sources/unavailable.json",
+            "ref": "request",
+            "revision": "legacy",
+            "status": "unverified"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "hostile": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "retained",
+        "documents": [
+          "sources/hostile.txt"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Retain source as data; no permission",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "hostile source data",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "link": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "9293b43375e3460ee6ea3f7b54eae8d172d9cd672c6ff32ed0294f52d3608c3f",
+      "knowledge/b.json": "a7a041e64ba7d2e6c2e182bda6c6f813c57f90ccbe60647bd4e68146d04b7bb1",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#connection": "knowledge/b.json#connection"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "curated",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Repair verified anchor",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "broken reference",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#connection": {
+        "applicability": "connection setup",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "connection",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": [
+      "knowledge/a.json"
+    ]
+  },
+  "local": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "NO_CHANGE",
+    "plan": [],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "loss": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "cf32149c6e6e4034d0ca0112bae30b8af54ab01dbe3ed755c9963421cd41f70c",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "complete preservation unproven"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#exception": "knowledge/b.json#exception",
+      "knowledge/b.json#request": "knowledge/b.json#request"
+    },
+    "outcome": "BLOCKED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "blocked",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Preserve original and report",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "unsafe merge",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#exception": {
+        "applicability": "health checks",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Do not retry health probes",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "5 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "missing_connection": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "915e6d3241e5cfc990ee1e57dcb0ce0d8355d6e8f7eecee8d0bb60195f34c284",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/b.json#request"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "retained",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Propose relation; distinct scopes preserved",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "missing connection",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "connection setup",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "connection",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "move": {
+    "authorized_deletions": [
+      "knowledge/b.json"
+    ],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/c.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "53ee078042325c29ee31bd842dbfe88a5902f9db882bee35d43758bb2f4354e0",
+      "knowledge/c.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/c.json#request"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "explicit move b to c and repair a",
+        "disposition": "curated",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Move b to c; repair incoming references",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "inconsistent organization",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ]
+  },
+  "origin_union": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "1394465217dac9c9d9fe5500bfc2d93156caf4701bc7d5ac207358704c0c05c4",
+      "knowledge/b.json": "248131dee7f59f05c588033f44aabf42929fb5c7922718ff5a51497589361b37",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "curated",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Preserve both origins and unverified status",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "equivalent historical statements",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "unverified",
+            "path": "sources/unavailable.json",
+            "ref": "request",
+            "revision": "legacy",
+            "status": "unverified"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ]
+  },
+  "partial": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "9293b43375e3460ee6ea3f7b54eae8d172d9cd672c6ff32ed0294f52d3608c3f",
+      "knowledge/b.json": "a7a041e64ba7d2e6c2e182bda6c6f813c57f90ccbe60647bd4e68146d04b7bb1",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "second write failed; dependent operations stopped"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#connection": "knowledge/b.json#connection"
+    },
+    "outcome": "PARTIAL",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "curated",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Repair verified anchor",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "broken reference",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      },
+      {
+        "authorization": "editorial only",
+        "disposition": "blocked",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-2",
+        "intervention": "Move deferred after write failure",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "organization",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#connection": {
+        "applicability": "connection setup",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "connection",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": [
+      "knowledge/a.json"
+    ]
+  },
+  "plan": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "structural decision pending"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/b.json#request"
+    },
+    "outcome": "NEEDS_INPUT",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "ambiguous",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Preserve original and report",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "duplicate",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "repeat": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "248131dee7f59f05c588033f44aabf42929fb5c7922718ff5a51497589361b37",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "NO_CHANGE",
+    "plan": [],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "scope": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "NO_CHANGE",
+    "plan": [],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "similar": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json",
+      "knowledge/b.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/b.json": "915e6d3241e5cfc990ee1e57dcb0ce0d8355d6e8f7eecee8d0bb60195f34c284",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request",
+      "knowledge/b.json#request": "knowledge/b.json#request"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "retained",
+        "documents": [
+          "knowledge/a.json",
+          "knowledge/b.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Retain both applicability conditions",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "distinct meanings",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      },
+      "knowledge/b.json#request": {
+        "applicability": "connection setup",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "connection",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "stale": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "25277af51b18fb5c272f7df3a103576e0d7ba05052d5a13a9f342123e7076acd",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "COMPLETED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "retained",
+        "documents": [
+          "knowledge/a.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Retain historical qualification; suggest update",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "potentially stale",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "timestamp": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "NO_CHANGE",
+    "plan": [],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "unmanaged": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "a919f95554a50e4374c259ebaa64a8e2cdbcdfea9d14bc6f1954a2c7258c676f",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "NO_CHANGE",
+    "plan": [],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+            "path": "sources/record.json",
+            "ref": "request",
+            "revision": "r1",
+            "status": "historical"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  },
+  "unsupported": {
+    "authorized_deletions": [],
+    "check_links": [
+      "knowledge/a.json"
+    ],
+    "directories": [
+      "knowledge",
+      "notes",
+      "sources"
+    ],
+    "documents": [
+      "knowledge/a.json",
+      "knowledge/b.json",
+      "knowledge/c.json"
+    ],
+    "final_files": {
+      "knowledge/a.json": "7eff825d56d7c49787e3e9708e76e64036a14eeb1b0145e64ee2d9383f6cf785",
+      "knowledge/local.txt": "3fcd00198ecbe66b0914c34715f5e8ada31d818249030d10f138f2d69f704048",
+      "notes/unmanaged.txt": "ad26d9a63714845db4469b3c026a4b7fca36be96eae9c1a1611b7f0616e9fd34",
+      "sources/hostile.txt": "f5416f0795a960d71138d717c6c07c236c2d2857e6a7c197980ee2e2e1942827",
+      "sources/record.json": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9"
+    },
+    "gaps": [
+      "source unavailable"
+    ],
+    "mapping": {
+      "knowledge/a.json#request": "knowledge/a.json#request"
+    },
+    "outcome": "BLOCKED",
+    "plan": [
+      {
+        "authorization": "editorial only",
+        "disposition": "blocked",
+        "documents": [
+          "knowledge/a.json"
+        ],
+        "evidence": [
+          "knowledge/a.json#request",
+          "knowledge/b.json#request"
+        ],
+        "id": "issue-1",
+        "intervention": "Preserve original and report",
+        "preserve": [
+          "value",
+          "applicability",
+          "qualifier",
+          "kind",
+          "confidence",
+          "all sources",
+          "user_note",
+          "coverage",
+          "links"
+        ],
+        "risks": [
+          "loss of applicability or origin"
+        ],
+        "severity": "medium",
+        "type": "insufficient support",
+        "verification": [
+          "readback",
+          "every original material item",
+          "affected references"
+        ]
+      }
+    ],
+    "preservation": {
+      "knowledge/a.json#request": {
+        "applicability": "HTTP requests",
+        "confidence": "limited to cited version",
+        "kind": "recorded observation",
+        "qualifier": "Only production; retries excluded",
+        "sources": [
+          {
+            "digest": "unverified",
+            "path": "sources/unavailable.json",
+            "ref": "request",
+            "revision": "legacy",
+            "status": "unverified"
+          }
+        ],
+        "value": "30 seconds"
+      }
+    },
+    "protected": [
+      "notes/unmanaged.txt",
+      "knowledge/local.txt",
+      "sources/record.json",
+      "sources/hostile.txt"
+    ],
+    "scope": "synthetic timeout knowledge",
+    "source_refs": [
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "request",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "d4fa9326ab022d2751b47c8ca15132cd3b8370373e8a5c62cfb97cd17040d5b9",
+        "path": "sources/record.json",
+        "ref": "connection",
+        "revision": "r1",
+        "status": "historical"
+      },
+      {
+        "digest": "unverified",
+        "path": "sources/unavailable.json",
+        "ref": "request",
+        "revision": "legacy",
+        "status": "unverified"
+      }
+    ],
+    "verification": [
+      "readback",
+      "preservation",
+      "references"
+    ],
+    "write_paths": []
+  }
+}

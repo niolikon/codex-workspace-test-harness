@@ -1,0 +1,14 @@
+{
+  "contract_version": 1,
+  "campaign_id": "h1-negative",
+  "scenarios": [
+    {
+      "id": "incorrect-expectation",
+      "fixture": "workspaces/basic",
+      "required": true,
+      "checks": [
+        {"id": "content", "kind": "text", "required": true, "path": "hello.txt", "expected": "This is not the fixture content.\n"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "service-spec",
+  "revision": "fixture-r3",
+  "facts": {
+    "service": {
+      "value": "Lantern",
+      "kind": "observed"
+    },
+    "status": {
+      "value": "unknown",
+      "kind": "observed"
+    },
+    "forecast": {
+      "value": "20",
+      "kind": "assumption"
+    }
+  }
+}

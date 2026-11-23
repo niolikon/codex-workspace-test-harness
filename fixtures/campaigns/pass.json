@@ -1,0 +1,19 @@
+{
+  "contract_version": 1,
+  "campaign_id": "h1-positive",
+  "scenarios": [
+    {
+      "id": "local-artifacts",
+      "fixture": "workspaces/basic",
+      "required": true,
+      "checks": [
+        {"id": "present", "kind": "exists", "required": true, "path": "hello.txt"},
+        {"id": "content", "kind": "text", "required": true, "path": "hello.txt", "expected": "Hello offline harness.\n"},
+        {"id": "structure", "kind": "json", "required": true, "path": "data.json", "expected": {"answer": 42, "synthetic": true}},
+        {"id": "absent", "kind": "absent", "required": true, "path": "unexpected.txt"},
+        {"id": "tree", "kind": "tree", "required": true, "expected": ["data.json", "hello.txt"]},
+        {"id": "preserved", "kind": "unchanged", "required": true}
+      ]
+    }
+  ]
+}

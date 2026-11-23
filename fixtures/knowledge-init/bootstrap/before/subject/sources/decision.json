@@ -1,0 +1,10 @@
+{
+  "id": "user-decision",
+  "revision": "fixture-d1",
+  "facts": {
+    "launch_scope": {
+      "value": "pilot",
+      "kind": "user_decision"
+    }
+  }
+}

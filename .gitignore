@@ -1,0 +1,25 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# OS and editor-local files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Generated caches, logs and scratch
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+*.log
+/tmp/
+/test-results/
+/coverage/
+/session_data/
+
+# Private historical diagnostic exports
+/i01-f01-evidence/
+/i01-f02-evidence/

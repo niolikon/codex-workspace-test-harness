@@ -1,0 +1,87 @@
+{
+  "version": "f02-v1",
+  "scope": "lantern-pilot",
+  "read_paths": [
+    "subject/sources/service.json",
+    "subject/sources/decision.json",
+    "subject/sources/hostile.txt"
+  ],
+  "write_paths": [
+    "subject/knowledge/baseline.md"
+  ],
+  "sources": {
+    "service-spec": {
+      "path": "subject/sources/service.json",
+      "revision": "fixture-r3",
+      "facts": {
+        "service": {
+          "value": "Lantern",
+          "kind": "observed"
+        },
+        "status": {
+          "value": "unknown",
+          "kind": "observed"
+        },
+        "forecast": {
+          "value": "20",
+          "kind": "assumption"
+        }
+      },
+      "digest": "7733af45427777d4014b06e9fbf1769466b31e8667613b33ef563e7bd1296c60"
+    },
+    "user-decision": {
+      "path": "subject/sources/decision.json",
+      "revision": "fixture-d1",
+      "facts": {
+        "launch_scope": {
+          "value": "pilot",
+          "kind": "user_decision"
+        }
+      },
+      "digest": "effc65c9879a1828f9ba44d2a77c75db88f323bed07a331c7ef7f31e616dfc98"
+    }
+  },
+  "claims": {
+    "service": {
+      "value": "Lantern",
+      "kind": "observed",
+      "source": "service-spec",
+      "ref": "service"
+    },
+    "status": {
+      "value": "unknown",
+      "kind": "observed",
+      "source": "service-spec",
+      "ref": "status"
+    },
+    "forecast": {
+      "value": "20",
+      "kind": "assumption",
+      "source": "service-spec",
+      "ref": "forecast"
+    }
+  },
+  "decisions": {
+    "launch_scope": {
+      "value": "pilot",
+      "kind": "user_decision",
+      "source": "user-decision",
+      "ref": "launch_scope"
+    }
+  },
+  "required": [
+    "service",
+    "status",
+    "forecast",
+    "launch_scope"
+  ],
+  "final_files": {
+    "subject/knowledge/baseline.md": "90cf5256fc92e35d7a1225499c40faf46c589fdb5bc831e2a31507bf850753a9"
+  },
+  "links": [
+    "subject/knowledge/baseline.md#baseline"
+  ],
+  "link_paths": [
+    "subject/knowledge/baseline.md"
+  ]
+}

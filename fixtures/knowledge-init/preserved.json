@@ -1,0 +1,21 @@
+{
+  "product_revision": "e02144b6cee5a28e5f17200cb2489d5b358e4fe9",
+  "protected_sha256": {
+    "docs/examples/knowledge-curate.md": "120ae891470e5b1c91ee0c4dd2eccbc57ea292e430336c04f001724b9e99faaa",
+    "docs/knowledge-curate.md": "4e7d74e4e31c26a9dfad39eb8a1ff486de248b028eeb0f2d9b5887f9fafa2ec2",
+    "docs/knowledge-init.md": "b4ffcb0c9b4368c84ddd8ff3b6dbfc2f1fa4f809762d5978a152f25379962471",
+    "docs/knowledge-update.md": "a286832511581aacd0c432e6b7bc9d4a92316acccabd60d0064d2d32794ebe04",
+    "docs/knowledge.md": "bb881ed85c70e2d36c567a705a687e79bd8b684c946dd6767aa8472c68f7b23a",
+    "docs/workflows.md": "b15cbd8b19ac992b07a048bd37b5c997e7ab5a90cd94318e483c2692f31901bc",
+    "template/.agents/skills/_contracts/knowledge-curate.md": "4e7d74e4e31c26a9dfad39eb8a1ff486de248b028eeb0f2d9b5887f9fafa2ec2",
+    "template/.agents/skills/_contracts/knowledge-init.md": "b4ffcb0c9b4368c84ddd8ff3b6dbfc2f1fa4f809762d5978a152f25379962471",
+    "template/.agents/skills/_contracts/knowledge-update.md": "a286832511581aacd0c432e6b7bc9d4a92316acccabd60d0064d2d32794ebe04",
+    "template/.agents/skills/_contracts/knowledge.md": "bb881ed85c70e2d36c567a705a687e79bd8b684c946dd6767aa8472c68f7b23a",
+    "template/.agents/skills/_contracts/workflows.md": "b15cbd8b19ac992b07a048bd37b5c997e7ab5a90cd94318e483c2692f31901bc",
+    "template/.agents/skills/knowledge-curate/SKILL.md": "4d1bf4cdfa8e02afa3557871b871efa8c98a01f179101d4a024e91377453bccf",
+    "template/.agents/skills/knowledge-init/SKILL.md": "9e3f82d0a95afd8e9902dbab592e4aacb0a128c9e02a3dcd54dd87b30c272805",
+    "template/.agents/skills/knowledge-update/SKILL.md": "fd2e0c08db8616e6fbb47a3acd3eb25f87db36320be72efd72759d02491525d7",
+    "template/.agents/skills/knowledge/SKILL.md": "b58d1318faed9ccd28b367114bd6bff19b994df4a88b5bb5e65bfab15edd4bf7",
+    "template/AGENTS.md": "d2aaa1415f09edecc3a02ee2c5c2da3c71ab96e8ebe094b564f6a5ea15bf8358"
+  }
+}

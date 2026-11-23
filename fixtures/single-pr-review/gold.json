@@ -1,0 +1,365 @@
+{
+  "schema_version": 1,
+  "contract": "RV-02",
+  "approved_matrix_sha256": "9deeb68a0867453b4bb6c355707a76cd3c02367a18fcae8365e44f124019f927",
+  "association": {
+    "work_item": "SAMPLE-17",
+    "repository": "sample/text-export",
+    "pr": "12",
+    "independent_source": "Harness fixture author"
+  },
+  "cases": {
+    "P8-POS": {
+      "review": "complete",
+      "gate": "allowed",
+      "reason": "allow",
+      "diff_opens": 1,
+      "writer_calls": 1,
+      "e0": false,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-LINK-ITEM": {
+      "review": null,
+      "gate": "denied",
+      "reason": "association",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-LINK-REPO": {
+      "review": null,
+      "gate": "denied",
+      "reason": "association",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-MISSING-PR": {
+      "review": null,
+      "gate": "denied",
+      "reason": "selection",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-MISSING-LINK": {
+      "review": null,
+      "gate": "denied",
+      "reason": "selection",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-MISSING-HEAD": {
+      "review": null,
+      "gate": "denied",
+      "reason": "selection",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-MISSING-AMBIG": {
+      "review": null,
+      "gate": "denied",
+      "reason": "selection",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-SCOPE-ACTION": {
+      "review": null,
+      "gate": "denied",
+      "reason": "scope",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-SCOPE-DEST": {
+      "review": null,
+      "gate": "denied",
+      "reason": "scope",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-SCOPE-SOURCES": {
+      "review": null,
+      "gate": "denied",
+      "reason": "scope",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "manifest"
+      }
+    },
+    "P8-SCOPE-SECOND": {
+      "review": null,
+      "gate": "denied",
+      "reason": "scope",
+      "diff_opens": 0,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "none"
+      }
+    },
+    "P8-CONSENT-ABSENT": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "absent",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-CONSENT-DENY": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "explicit_deny",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-CONSENT-DIGEST": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "receipt_binding",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-CONSENT-EARLY": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "receipt_order",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-CONSENT-EARLY-MTIME": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "receipt_mtime",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-CONSENT-DUPLICATE": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "receipt_shape",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-CONSENT-MISSING": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "receipt_shape",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-CONSENT-UNKNOWN": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "receipt_shape",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-SHA-BASE": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "stale",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "none"
+      }
+    },
+    "P8-SHA-HEAD": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "stale",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "none"
+      }
+    },
+    "P8-SESSION-ROTATE": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "stale",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "sequence": "recover",
+      "acquisition": {
+        "preview": "full",
+        "action": "none",
+        "recovery-preview": "full",
+        "recovery-action": "full"
+      }
+    },
+    "P8-SESSION-RESUME": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "stale",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "sequence": "recover",
+      "acquisition": {
+        "preview": "full",
+        "action": "none",
+        "recovery-preview": "full",
+        "recovery-action": "full"
+      }
+    },
+    "P8-REPLAY-PROCESS": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "replay",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "sequence": "first_success",
+      "acquisition": {
+        "preview": "full",
+        "action": "full",
+        "first-action": "full"
+      }
+    },
+    "P8-REPLAY-RACE": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "replay",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "sequence": "race",
+      "acquisition": {
+        "preview": "full",
+        "action": "full",
+        "contender": "full"
+      }
+    },
+    "P8-REPLAY-FAULT": {
+      "review": "complete",
+      "gate": "denied",
+      "reason": "replay",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "sequence": "recover_from_fault",
+      "acquisition": {
+        "preview": "full",
+        "action": "full",
+        "first-action": "full",
+        "recovery-preview": "full",
+        "recovery-action": "full"
+      }
+    },
+    "P8-VERDICT-CONTRADICTION": {
+      "review": "complete",
+      "gate": "allowed",
+      "reason": "allow",
+      "diff_opens": 1,
+      "writer_calls": 1,
+      "e0": false,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-VERDICT-INCOMPLETE": {
+      "review": "incomplete",
+      "gate": "denied",
+      "reason": "review_state",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    },
+    "P8-VERDICT-REJECTED": {
+      "review": "rejected",
+      "gate": "denied",
+      "reason": "review_state",
+      "diff_opens": 1,
+      "writer_calls": 0,
+      "e0": true,
+      "acquisition": {
+        "preview": "full",
+        "action": "full"
+      }
+    }
+  }
+}

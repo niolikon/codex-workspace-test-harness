@@ -1,0 +1,18 @@
+{
+  "fixtures/knowledge-init/bootstrap/README.md": "470adee62802386f55bcab5ef4f30738fed79a13f323dca084dd43ad31f004a9",
+  "fixtures/knowledge-init/bootstrap/before/sibling/outside.txt": "8681316f21687e1d9a80f455204979f37a296a06594314c2e03e09c01c6ac798",
+  "fixtures/knowledge-init/bootstrap/before/subject/app.py": "a6e6a6b03ea1d6da3e17c601ab30265ff2884f79e46a291e1c8d6a8d892944c5",
+  "fixtures/knowledge-init/bootstrap/before/subject/knowledge/baseline.md": "635273fa528993d515545105ff66a19e8e7eacd8e5e7b0016242aa739942efc0",
+  "fixtures/knowledge-init/bootstrap/before/subject/notes/unmanaged.md": "307f8bea0b5e69acd30c7fbb32efe090a36a594dd8d26936449a56b3b5b200ba",
+  "fixtures/knowledge-init/bootstrap/before/subject/sources/decision.json": "effc65c9879a1828f9ba44d2a77c75db88f323bed07a331c7ef7f31e616dfc98",
+  "fixtures/knowledge-init/bootstrap/before/subject/sources/hostile.txt": "6b5eb9eeaea65b1f81385e833868f81b5a15ce930d41a855e557f1faab3d5e8f",
+  "fixtures/knowledge-init/bootstrap/before/subject/sources/service.json": "7733af45427777d4014b06e9fbf1769466b31e8667613b33ef563e7bd1296c60",
+  "fixtures/knowledge-init/bootstrap/expectations.json": "cab6919de49f1e81c592dc2607c3dce35008cb06ebcf4bfd14e5456bdc2f0221",
+  "fixtures/knowledge-init/bootstrap/expected-final.md": "90cf5256fc92e35d7a1225499c40faf46c589fdb5bc831e2a31507bf850753a9",
+  "fixtures/knowledge-init/bootstrap/positive.json": "59d2beab60b98cc8803445c7f5e0b572bd1356f0d8c6817dd809143eee78ba77",
+  "fixtures/knowledge-init/bootstrap/scenarios.json": "04419fe35e3a62ad47a7a728a5b1c495db44c798e93f83c6006c573d0365e2f9",
+  "fixtures/knowledge-update/dependency-sha256.json": "2949b7c88abde1fa42d3f82e960c6f40dd671d3fc0549ff9339d5ce26fcdd385",
+  "fixtures/knowledge-update/merge/expectations.json": "1deea41a8d5e03341f4f3d4a4cc006ed4be718d54f090100b2ba79993b2b5838",
+  "fixtures/knowledge-update/merge/inputs.json": "dee96aafe3534e0fbbd6edb83aace08b1efe53175f9cbb1779a489548ef90ab8",
+  "fixtures/knowledge-update/merge/scenarios.json": "119117360bb86e481d0201142ed845397146b56819bd386f2ddd115c3e83756e"
+}

@@ -1,0 +1,879 @@
+{
+  "schema_version": 1,
+  "validator_version": "1.0.0",
+  "computed_reasons": {
+    "R1": {
+      "supported": "The bound head snapshot and the supplied synthetic log agree on the empty value. It satisfies the cited requirement.",
+      "contradicted": "The bound head snapshot and the supplied synthetic log agree on the empty value. It contradicts the cited requirement."
+    },
+    "R2": {
+      "supported": "The bound head snapshot and the supplied synthetic log agree on the nonempty value. It satisfies the cited requirement."
+    },
+    "G1": {
+      "supported": "The encoding value declared in the head snapshot matches the cited guideline."
+    },
+    "T1": {
+      "supported": "The nonempty values in the bound base and head snapshots are identical."
+    }
+  },
+  "criteria": {
+    "R1": {
+      "dimension": "requirements",
+      "rule": "rv01.empty",
+      "statement": "R1: export empty input as [].",
+      "roles": {
+        "item": "item",
+        "head": "head",
+        "tests": "tests"
+      },
+      "citations": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    },
+    "R2": {
+      "dimension": "requirements",
+      "rule": "rv01.nonempty",
+      "statement": "R2: preserve header for nonempty input.",
+      "roles": {
+        "item": "item",
+        "head": "head",
+        "tests": "tests"
+      },
+      "citations": [
+        "c4",
+        "c5",
+        "c6"
+      ]
+    },
+    "G1": {
+      "dimension": "guidelines",
+      "rule": "rv01.encoding",
+      "statement": "G1: require UTF-8 export.",
+      "roles": {
+        "guide": "guide",
+        "head": "head"
+      },
+      "citations": [
+        "c7",
+        "c8"
+      ]
+    },
+    "T1": {
+      "dimension": "technical",
+      "rule": "rv01.nonempty_equal",
+      "statement": "The nonempty value is identical in the base and head snapshots.",
+      "roles": {
+        "base": "base",
+        "head": "head"
+      },
+      "citations": [
+        "c9",
+        "c5"
+      ]
+    }
+  },
+  "offsets": {
+    "A": [
+      [
+        7,
+        36
+      ],
+      [
+        15,
+        23
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        37,
+        76
+      ],
+      [
+        24,
+        44
+      ],
+      [
+        10,
+        31
+      ],
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        26,
+        46
+      ]
+    ],
+    "B": [
+      [
+        7,
+        36
+      ],
+      [
+        15,
+        25
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        37,
+        76
+      ],
+      [
+        26,
+        46
+      ],
+      [
+        12,
+        33
+      ],
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        26,
+        46
+      ]
+    ],
+    "utf8": [
+      [
+        7,
+        36
+      ],
+      [
+        15,
+        23
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        37,
+        76
+      ],
+      [
+        24,
+        44
+      ],
+      [
+        10,
+        31
+      ],
+      [
+        4,
+        29
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        26,
+        46
+      ],
+      [
+        0,
+        4
+      ]
+    ]
+  },
+  "facts": {
+    "A": {
+      "head": {
+        "encoding": "UTF-8",
+        "empty": "[]",
+        "nonempty": "header,rows"
+      },
+      "tests": {
+        "empty": "[]",
+        "nonempty": "header,rows"
+      },
+      "base": {
+        "nonempty": "header,rows"
+      }
+    },
+    "B": {
+      "head": {
+        "encoding": "UTF-8",
+        "empty": "null",
+        "nonempty": "header,rows"
+      },
+      "tests": {
+        "empty": "null",
+        "nonempty": "header,rows"
+      },
+      "base": {
+        "nonempty": "header,rows"
+      }
+    }
+  },
+  "case_expectations": {
+    "A": {
+      "state": "complete",
+      "codes": [],
+      "projection": true
+    },
+    "A-self-report": {
+      "state": "complete",
+      "codes": [],
+      "projection": true
+    },
+    "B": {
+      "state": "complete",
+      "codes": [],
+      "projection": true
+    },
+    "B-false-claim": {
+      "state": "rejected",
+      "codes": [
+        "CLAIM_STATUS_MISMATCH"
+      ]
+    },
+    "C-no-manifest": {
+      "state": "incomplete",
+      "codes": [
+        "MANIFEST_MISSING"
+      ]
+    },
+    "C-no-candidate": {
+      "state": "incomplete",
+      "codes": [
+        "CANDIDATE_MISSING"
+      ]
+    },
+    "C-tests-missing": {
+      "state": "incomplete",
+      "codes": [
+        "SOURCE_MISSING"
+      ],
+      "projection": true
+    },
+    "C-item-missing": {
+      "state": "incomplete",
+      "codes": [
+        "SOURCE_MISSING"
+      ],
+      "projection": true
+    },
+    "C-tests-unavailable": {
+      "state": "incomplete",
+      "codes": [
+        "SOURCE_UNAVAILABLE"
+      ],
+      "projection": true
+    },
+    "C-false-claim": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_MISSING",
+        "CLAIM_UNSUPPORTED"
+      ]
+    },
+    "C-manual-required": {
+      "state": "incomplete",
+      "codes": [
+        "CLAIM_UNVERIFIED"
+      ],
+      "projection": true
+    },
+    "C-manual-optional": {
+      "state": "complete",
+      "codes": [
+        "CLAIM_UNVERIFIED"
+      ],
+      "projection": true
+    },
+    "C-manual-excluded": {
+      "state": "complete",
+      "codes": [],
+      "projection": true
+    },
+    "C-manual-falsely-excluded": {
+      "state": "rejected",
+      "codes": [
+        "CLAIM_STATUS_MISMATCH"
+      ]
+    },
+    "D-work-item": {
+      "state": "rejected",
+      "codes": [
+        "WORK_ITEM_BINDING_MISMATCH"
+      ]
+    },
+    "D-target": {
+      "state": "rejected",
+      "codes": [
+        "TARGET_BINDING_MISMATCH"
+      ]
+    },
+    "D-target-pr": {
+      "state": "rejected",
+      "codes": [
+        "TARGET_BINDING_MISMATCH"
+      ]
+    },
+    "D-target-head": {
+      "state": "rejected",
+      "codes": [
+        "TARGET_BINDING_MISMATCH"
+      ]
+    },
+    "D-side": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_BINDING_MISMATCH"
+      ]
+    },
+    "D-test-revision": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_BINDING_MISMATCH"
+      ]
+    },
+    "D-origin": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_BINDING_MISMATCH"
+      ]
+    },
+    "D-capture": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_BINDING_MISMATCH"
+      ]
+    },
+    "D-manifest": {
+      "state": "rejected",
+      "codes": [
+        "MANIFEST_BINDING_MISMATCH"
+      ]
+    },
+    "D-bytes": {
+      "state": "rejected",
+      "diagnostic_reference": "head",
+      "codes": [
+        "SOURCE_DIGEST_MISMATCH"
+      ]
+    },
+    "D-size": {
+      "state": "rejected",
+      "diagnostic_reference": "head",
+      "codes": [
+        "SOURCE_SIZE_MISMATCH"
+      ]
+    },
+    "D-rehashed": {
+      "state": "rejected",
+      "diagnostic_reference": "head",
+      "codes": [
+        "SOURCE_DIGEST_MISMATCH",
+        "SOURCE_BINDING_MISMATCH"
+      ]
+    },
+    "D-false-attestation": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_DIGEST_MISMATCH"
+      ]
+    },
+    "E-range": {
+      "state": "rejected",
+      "codes": [
+        "CITATION_RANGE"
+      ]
+    },
+    "E-quote": {
+      "state": "rejected",
+      "codes": [
+        "CITATION_QUOTE_MISMATCH"
+      ]
+    },
+    "E-unrelated": {
+      "state": "rejected",
+      "codes": [
+        "CLAIM_UNSUPPORTED"
+      ]
+    },
+    "E-irrelevant-appended": {
+      "state": "rejected",
+      "codes": [
+        "CLAIM_UNSUPPORTED"
+      ]
+    },
+    "E-duplicate": {
+      "state": "rejected",
+      "codes": [
+        "DUPLICATE_CITATION"
+      ]
+    },
+    "E-coverage": {
+      "state": "rejected",
+      "codes": [
+        "COVERAGE_MISSING"
+      ]
+    },
+    "E-unknown": {
+      "state": "rejected",
+      "codes": [
+        "REFERENCE_UNKNOWN"
+      ]
+    },
+    "E-finding": {
+      "state": "rejected",
+      "codes": [
+        "DUPLICATE_FINDING"
+      ]
+    },
+    "E-utf8": {
+      "state": "complete",
+      "codes": [],
+      "projection": true
+    },
+    "E-utf8-boundary": {
+      "state": "rejected",
+      "codes": [
+        "CITATION_UTF8_BOUNDARY"
+      ]
+    },
+    "F-candidate-duplicate": {
+      "state": "rejected",
+      "codes": [
+        "JSON_DUPLICATE_KEY"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-duplicate": {
+      "state": "rejected",
+      "codes": [
+        "JSON_DUPLICATE_KEY"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-escaped-duplicate": {
+      "state": "rejected",
+      "codes": [
+        "JSON_DUPLICATE_KEY"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-escaped-duplicate": {
+      "state": "rejected",
+      "codes": [
+        "JSON_DUPLICATE_KEY"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-version": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_VERSION_UNSUPPORTED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-version": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_VERSION_UNSUPPORTED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-truncated": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-truncated": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-comment": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-comment": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-trailing-comma": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-trailing-comma": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-trailing-token": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-trailing-token": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-root-array": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_INVALID"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-root-array": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_INVALID"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-unknown": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_INVALID"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-unknown": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_INVALID"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-type": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_INVALID"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-type": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_INVALID"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-key-case": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_INVALID"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-key-case": {
+      "state": "rejected",
+      "codes": [
+        "SCHEMA_INVALID"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-bom": {
+      "state": "rejected",
+      "codes": [
+        "JSON_ENCODING"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-bom": {
+      "state": "rejected",
+      "codes": [
+        "JSON_ENCODING"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-invalid-utf8": {
+      "state": "rejected",
+      "codes": [
+        "JSON_ENCODING"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-invalid-utf8": {
+      "state": "rejected",
+      "codes": [
+        "JSON_ENCODING"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-surrogate": {
+      "state": "rejected",
+      "codes": [
+        "JSON_ENCODING"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-surrogate": {
+      "state": "rejected",
+      "codes": [
+        "JSON_ENCODING"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-size": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-size": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-depth": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-depth": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-array-count": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-array-count": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-key-count": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-key-count": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-value-count": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-value-count": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-string-size": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-string-size": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-key-size": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-key-size": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-integer-range": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-integer-range": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-candidate-noninteger": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "candidate"
+    },
+    "F-manifest-noninteger": {
+      "state": "rejected",
+      "codes": [
+        "JSON_SYNTAX"
+      ],
+      "diagnostic_reference": "manifest"
+    },
+    "F-source-encoding": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_ENCODING"
+      ]
+    },
+    "F-source-size": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ]
+    },
+    "F-source-total": {
+      "state": "rejected",
+      "codes": [
+        "LIMIT_EXCEEDED"
+      ]
+    },
+    "F-label": {
+      "state": "complete",
+      "codes": [],
+      "projection": true
+    },
+    "G-traversal": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_TRAVERSAL"
+      ]
+    },
+    "G-absolute": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_ABSOLUTE"
+      ]
+    },
+    "G-ads": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_ADS"
+      ]
+    },
+    "G-device": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_RESERVED"
+      ]
+    },
+    "G-case": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_ALIAS"
+      ]
+    },
+    "G-dot": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_ALIAS"
+      ]
+    },
+    "G-trailing": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_ALIAS"
+      ]
+    },
+    "G-junction": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_REPARSE_POINT"
+      ]
+    },
+    "G-candidate-traversal": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_TRAVERSAL"
+      ]
+    },
+    "G-candidate-absolute": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_ABSOLUTE"
+      ]
+    },
+    "G-candidate-ads": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_ADS"
+      ]
+    },
+    "G-candidate-device": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_RESERVED"
+      ]
+    },
+    "G-candidate-case": {
+      "state": "rejected",
+      "codes": [
+        "SOURCE_PATH_ALIAS"
+      ]
+    }
+  }
+}

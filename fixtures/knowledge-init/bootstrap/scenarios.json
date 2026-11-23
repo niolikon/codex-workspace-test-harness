@@ -1,0 +1,572 @@
+[
+  {
+    "id": "positive-complete",
+    "expected_status": "PASS",
+    "required_codes": [],
+    "edits": [],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "positive-no-change",
+    "expected_status": "PASS",
+    "required_codes": [],
+    "edits": [
+      {
+        "op": "set",
+        "path": "outcome",
+        "value": "NO_CHANGE"
+      },
+      {
+        "op": "set",
+        "path": "writes",
+        "value": []
+      }
+    ],
+    "filesystem": [],
+    "repeat": true
+  },
+  {
+    "id": "source-missing",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "SOURCE_MISSING"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "remove",
+        "path": "subject/sources/service.json"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "source-modified",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "SOURCE_DIGEST"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "write",
+        "path": "subject/sources/service.json",
+        "value": "{\"id\":\"service-spec\",\"revision\":\"fixture-r3\",\"facts\":{}}\n"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "revision-forged",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "REVISION"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "claims/0/revision",
+        "value": "invented-r99"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "provenance-forged",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "SOURCE_IDENTITY"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "claims/0/source",
+        "value": "invented-source"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "declared-digest-forged",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "DECLARED_DIGEST"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "claims/0/digest",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "claim-unsupported",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "UNSUPPORTED_CLAIM"
+    ],
+    "edits": [
+      {
+        "op": "append",
+        "path": "claims",
+        "value": {
+          "key": "owner",
+          "value": "Nobody",
+          "kind": "observed",
+          "source": "service-spec",
+          "ref": "service",
+          "revision": "fixture-r3",
+          "digest": "7733af45427777d4014b06e9fbf1769466b31e8667613b33ef563e7bd1296c60"
+        }
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "claim-contradictory",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "DUPLICATE_OR_CONTRADICTORY_CLAIM",
+      "CLAIM_VALUE"
+    ],
+    "edits": [
+      {
+        "op": "append",
+        "path": "claims",
+        "value": {
+          "key": "service",
+          "value": "Other",
+          "kind": "observed",
+          "source": "service-spec",
+          "ref": "service",
+          "revision": "fixture-r3",
+          "digest": "7733af45427777d4014b06e9fbf1769466b31e8667613b33ef563e7bd1296c60"
+        }
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "claim-replaced",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "CLAIM_VALUE",
+      "SOURCE_SUPPORT"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "claims/0/value",
+        "value": "Other"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "decision-missing",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "MISSING_DECISION",
+      "UNJUSTIFIED_COMPLETED"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "decisions",
+        "value": []
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "decision-invented",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "CLAIM_VALUE",
+      "SOURCE_SUPPORT"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "decisions/0/value",
+        "value": "global"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "assumption-promoted",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "EPISTEMIC_KIND"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "claims/2/kind",
+        "value": "observed"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "completed-insufficient",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "COVERAGE",
+      "UNJUSTIFIED_COMPLETED"
+    ],
+    "edits": [
+      {
+        "op": "remove",
+        "path": "claims/1"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "gap-hidden",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "COVERAGE"
+    ],
+    "edits": [
+      {
+        "op": "remove",
+        "path": "claims/1"
+      },
+      {
+        "op": "set",
+        "path": "outcome",
+        "value": "PARTIAL"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "reference-unresolved",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "REFERENCE_UNRESOLVED",
+      "SOURCE_SUPPORT"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "claims/0/ref",
+        "value": "absent-symbol"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "link-anchor-unresolved",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "LINK_UNRESOLVED"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "links/0",
+        "value": "subject/knowledge/baseline.md#invented"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "link-file-unresolved",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "LINK_UNRESOLVED"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "links/0",
+        "value": "subject/knowledge/missing.md#baseline"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "no-change-modified",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "NO_CHANGE_MODIFIED"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "outcome",
+        "value": "NO_CHANGE"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "scope-identity",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "SCOPE_IDENTITY"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "scope",
+        "value": "other-subject"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "implicit-sibling-read",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "UNAUTHORIZED_READS"
+    ],
+    "edits": [
+      {
+        "op": "append",
+        "path": "reads",
+        "value": "sibling/outside.txt"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "source-hostile-write",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "UNAUTHORIZED_WRITES",
+      "PRESERVATION"
+    ],
+    "edits": [
+      {
+        "op": "append",
+        "path": "writes",
+        "value": "sibling/outside.txt"
+      }
+    ],
+    "filesystem": [
+      {
+        "op": "write",
+        "path": "sibling/outside.txt",
+        "value": "Followed hostile source.\n"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "traversal",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "UNSAFE_PATH"
+    ],
+    "edits": [
+      {
+        "op": "append",
+        "path": "writes",
+        "value": "../escape.md"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "absolute-path",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "UNSAFE_PATH"
+    ],
+    "edits": [
+      {
+        "op": "append",
+        "path": "reads",
+        "value": "C:/unselected/source.txt"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "unmanaged-modified",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "PRESERVATION"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "write",
+        "path": "subject/notes/unmanaged.md",
+        "value": "Lost user content.\n"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "outside-scope-added",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "PRESERVATION"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "write",
+        "path": "sibling/new.txt",
+        "value": "Unreported side effect.\n"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "application-modified",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "PRESERVATION"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "write",
+        "path": "subject/app.py",
+        "value": "# forbidden\n"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "stronger-knowledge-lost",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "FINAL_READBACK"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "write",
+        "path": "subject/knowledge/baseline.md",
+        "value": "## baseline\nService: Lantern\n"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "final-content-false",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "FINAL_READBACK"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "write",
+        "path": "subject/knowledge/baseline.md",
+        "value": "## baseline\nExisting stronger fact: owner is Mira (user declaration D0).\nService: Lantern\nStatus: ready\nForecast: 20 (assumption, not observed)\nLaunch scope: pilot (user decision)\n[baseline](subject/knowledge/baseline.md#baseline)\n"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "unmanaged-deleted",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "PRESERVATION"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "remove",
+        "path": "subject/notes/unmanaged.md"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "topology-added",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "TOPOLOGY"
+    ],
+    "edits": [],
+    "filesystem": [
+      {
+        "op": "mkdir",
+        "path": "subject/unauthorized"
+      }
+    ],
+    "repeat": false
+  },
+  {
+    "id": "malformed-artifact",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "FORMAT"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "claims",
+        "value": "not a list"
+      }
+    ],
+    "filesystem": [],
+    "repeat": false
+  },
+  {
+    "id": "self-consistent-forgery",
+    "expected_status": "FAIL",
+    "required_codes": [
+      "SOURCE_DIGEST",
+      "REVISION",
+      "CLAIM_VALUE"
+    ],
+    "edits": [
+      {
+        "op": "set",
+        "path": "claims/0/value",
+        "value": "Other"
+      },
+      {
+        "op": "set",
+        "path": "claims/0/revision",
+        "value": "invented-r99"
+      },
+      {
+        "op": "set",
+        "path": "claims/0/digest",
+        "value": "e29befcf60ed89e845aa6f4afbd6a61ec21f5c3c6386e3e285507686c7ba8b61"
+      }
+    ],
+    "filesystem": [
+      {
+        "op": "write",
+        "path": "subject/sources/service.json",
+        "value": "{\n  \"id\": \"service-spec\",\n  \"revision\": \"invented-r99\",\n  \"facts\": {\n    \"service\": {\n      \"value\": \"Other\",\n      \"kind\": \"observed\"\n    },\n    \"status\": {\n      \"value\": \"unknown\",\n      \"kind\": \"observed\"\n    },\n    \"forecast\": {\n      \"value\": \"20\",\n      \"kind\": \"assumption\"\n    }\n  }\n}\n"
+      }
+    ],
+    "repeat": false
+  }
+]

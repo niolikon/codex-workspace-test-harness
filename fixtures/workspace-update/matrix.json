@@ -1,0 +1,119 @@
+[
+  {
+    "name": "unchanged",
+    "b": "base",
+    "l": "base",
+    "n": "base",
+    "action": "UNCHANGED",
+    "after": "base",
+    "baseline": "base"
+  },
+  {
+    "name": "update",
+    "b": "base",
+    "l": "base",
+    "n": "new",
+    "action": "UPDATE",
+    "after": "new",
+    "baseline": "new"
+  },
+  {
+    "name": "local",
+    "b": "base",
+    "l": "local",
+    "n": "base",
+    "action": "PRESERVE_LOCAL",
+    "after": "local",
+    "baseline": "base"
+  },
+  {
+    "name": "align",
+    "b": "base",
+    "l": "new",
+    "n": "new",
+    "action": "ALIGN",
+    "after": "new",
+    "baseline": "new"
+  },
+  {
+    "name": "conflict",
+    "b": "base",
+    "l": "local",
+    "n": "new",
+    "action": "CONFLICT_CHANGED",
+    "after": "local",
+    "baseline": "base"
+  },
+  {
+    "name": "deleted",
+    "b": "base",
+    "l": null,
+    "n": "base",
+    "action": "PRESERVE_DELETION",
+    "after": null,
+    "baseline": "base"
+  },
+  {
+    "name": "deleted-conflict",
+    "b": "base",
+    "l": null,
+    "n": "new",
+    "action": "CONFLICT_CHANGED",
+    "after": null,
+    "baseline": "base"
+  },
+  {
+    "name": "release-clean",
+    "b": "base",
+    "l": "base",
+    "n": null,
+    "action": "RELEASE",
+    "after": "base",
+    "baseline": null
+  },
+  {
+    "name": "release-local",
+    "b": "base",
+    "l": "local",
+    "n": null,
+    "action": "RELEASE",
+    "after": "local",
+    "baseline": null
+  },
+  {
+    "name": "release-deleted",
+    "b": "base",
+    "l": null,
+    "n": null,
+    "action": "RELEASE",
+    "after": null,
+    "baseline": null
+  },
+  {
+    "name": "create",
+    "b": null,
+    "l": null,
+    "n": "new",
+    "action": "CREATE",
+    "after": "new",
+    "baseline": "new"
+  },
+  {
+    "name": "unmanaged",
+    "b": null,
+    "l": "local",
+    "n": "new",
+    "action": "CONFLICT_UNMANAGED",
+    "after": "local",
+    "baseline": null
+  },
+  {
+    "name": "unmanaged-equal",
+    "b": null,
+    "l": "new",
+    "n": "new",
+    "action": "CONFLICT_UNMANAGED",
+    "after": "new",
+    "baseline": null
+  }
+]

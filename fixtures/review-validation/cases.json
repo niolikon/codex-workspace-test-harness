@@ -1,0 +1,1205 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "item": {
+      "path": "work-item.txt",
+      "text": "WI-701\nR1: export empty input as [].\nR2: preserve header for nonempty input.\n",
+      "sha256": "1c9649067232d7b7cae1d15b4abb4fcb7a87f2b5c36486129f3be36032e8fcc6"
+    },
+    "guide": {
+      "path": "guidelines.txt",
+      "text": "G1: require UTF-8 export.\n",
+      "sha256": "a019b5263e6f6c4b634c6687e5a9e86f63d634482546bd578f4b5e2e25bbd486"
+    },
+    "base": {
+      "path": "base/export.txt",
+      "text": "encoding=UTF-8\nempty=null\nnonempty=header,rows\n",
+      "sha256": "c94e8aa55ce8837e952ec8cbc7538dd667a97e67191eee65d887b826277a6e2c"
+    },
+    "head": {
+      "path": "head/export.txt",
+      "text": "encoding=UTF-8\nempty=[]\nnonempty=header,rows\n",
+      "sha256": "eea4e637e10c0c734ea3856d9777a8fc0c25ab8cf6353df03802613f9a43fed7"
+    },
+    "tests": {
+      "path": "tests.txt",
+      "text": "empty: []\nnonempty: header,rows\n",
+      "sha256": "b224ab3947619023a9d98ebeb02f9373ef9aae8bae21557e8e634ee2c3f6d5d4"
+    }
+  },
+  "cases": [
+    {
+      "id": "A",
+      "variant": "A",
+      "operations": []
+    },
+    {
+      "id": "A-self-report",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "state",
+          "rejected"
+        ],
+        [
+          "set",
+          "candidate",
+          "validation",
+          {
+            "validator_version": "candidate-claim",
+            "checks": [
+              {
+                "id": "fake-check",
+                "scope": "semantics",
+                "status": "fail",
+                "code": "FAKE_CHECK",
+                "references": [
+                  "R1"
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "B",
+      "variant": "B",
+      "operations": []
+    },
+    {
+      "id": "B-false-claim",
+      "variant": "B",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "results.requirements.0.status",
+          "supported"
+        ]
+      ]
+    },
+    {
+      "id": "C-no-manifest",
+      "variant": "A",
+      "operations": [
+        [
+          "omit",
+          "manifest"
+        ]
+      ]
+    },
+    {
+      "id": "C-no-candidate",
+      "variant": "A",
+      "operations": [
+        [
+          "omit",
+          "candidate"
+        ]
+      ]
+    },
+    {
+      "id": "C-tests-missing",
+      "variant": "A",
+      "operations": [
+        [
+          "gap",
+          "tests",
+          "missing",
+          "SOURCE_MISSING"
+        ]
+      ]
+    },
+    {
+      "id": "C-item-missing",
+      "variant": "A",
+      "operations": [
+        [
+          "gap",
+          "item",
+          "missing",
+          "SOURCE_MISSING"
+        ]
+      ]
+    },
+    {
+      "id": "C-tests-unavailable",
+      "variant": "A",
+      "operations": [
+        [
+          "gap",
+          "tests",
+          "unavailable",
+          "SOURCE_UNAVAILABLE"
+        ]
+      ]
+    },
+    {
+      "id": "C-false-claim",
+      "variant": "A",
+      "operations": [
+        [
+          "gap",
+          "tests",
+          "missing",
+          "SOURCE_MISSING"
+        ],
+        [
+          "set",
+          "candidate",
+          "results.requirements.0.status",
+          "supported"
+        ]
+      ]
+    },
+    {
+      "id": "C-manual-required",
+      "variant": "A",
+      "operations": [
+        [
+          "manual",
+          "required"
+        ]
+      ]
+    },
+    {
+      "id": "C-manual-optional",
+      "variant": "A",
+      "operations": [
+        [
+          "manual",
+          "optional"
+        ]
+      ]
+    },
+    {
+      "id": "C-manual-excluded",
+      "variant": "A",
+      "operations": [
+        [
+          "manual",
+          "excluded"
+        ]
+      ]
+    },
+    {
+      "id": "C-manual-falsely-excluded",
+      "variant": "A",
+      "operations": [
+        [
+          "manual",
+          "required"
+        ],
+        [
+          "set",
+          "candidate",
+          "results.requirements.2.status",
+          "not_applicable"
+        ]
+      ]
+    },
+    {
+      "id": "D-work-item",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "scope.work_item.id",
+          "WI-702"
+        ]
+      ]
+    },
+    {
+      "id": "D-target",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "scope.target.repository_id",
+          "fixture/other"
+        ]
+      ]
+    },
+    {
+      "id": "D-target-pr",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "scope.target.pr_id",
+          "PR-17"
+        ]
+      ]
+    },
+    {
+      "id": "D-target-head",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "scope.target.head",
+          "snapshot:h8"
+        ]
+      ]
+    },
+    {
+      "id": "D-side",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "sources.3.side",
+          "base"
+        ]
+      ]
+    },
+    {
+      "id": "D-test-revision",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "sources.4.revision",
+          "snapshot:b1"
+        ]
+      ]
+    },
+    {
+      "id": "D-origin",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "sources.4.origin",
+          "supplied_local"
+        ]
+      ]
+    },
+    {
+      "id": "D-capture",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "sources.4.captured_at_utc",
+          "2026-11-21T08:00:01Z"
+        ]
+      ]
+    },
+    {
+      "id": "D-manifest",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "provenance.manifest_sha256",
+          "0000000000000000000000000000000000000000000000000000000000000000"
+        ]
+      ]
+    },
+    {
+      "id": "D-bytes",
+      "variant": "A",
+      "operations": [
+        [
+          "replace-bytes",
+          "head",
+          "empty=[]",
+          "empty={}"
+        ]
+      ]
+    },
+    {
+      "id": "D-size",
+      "variant": "A",
+      "operations": [
+        [
+          "replace-bytes",
+          "head",
+          "empty=[]",
+          "empty=null"
+        ]
+      ]
+    },
+    {
+      "id": "D-rehashed",
+      "variant": "A",
+      "operations": [
+        [
+          "replace-bytes",
+          "head",
+          "empty=[]",
+          "empty={}"
+        ],
+        [
+          "redeclare",
+          "head"
+        ]
+      ]
+    },
+    {
+      "id": "D-false-attestation",
+      "variant": "A",
+      "operations": [
+        [
+          "replace-bytes",
+          "head",
+          "empty=[]",
+          "empty={}"
+        ],
+        [
+          "set",
+          "candidate",
+          "state",
+          "complete"
+        ],
+        [
+          "set",
+          "candidate",
+          "validation",
+          {
+            "validator_version": "candidate-claim",
+            "checks": [
+              {
+                "id": "fake-check",
+                "scope": "integrity",
+                "status": "pass",
+                "code": "FAKE_CHECK",
+                "references": [
+                  "head"
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "E-range",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "citations.1.end_byte",
+          46
+        ]
+      ]
+    },
+    {
+      "id": "E-quote",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "citations.1.quote",
+          "empty=null"
+        ]
+      ]
+    },
+    {
+      "id": "E-unrelated",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "results.requirements.0.citation_ids",
+          [
+            "c1",
+            "c8",
+            "c3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "E-irrelevant-appended",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "results.requirements.0.citation_ids",
+          ["c1", "c2", "c3", "c8"]
+        ]
+      ]
+    },
+    {
+      "id": "E-duplicate",
+      "variant": "A",
+      "operations": [
+        [
+          "duplicate",
+          "citations",
+          1,
+          "c10"
+        ]
+      ]
+    },
+    {
+      "id": "E-coverage",
+      "variant": "A",
+      "operations": [
+        [
+          "delete",
+          "candidate",
+          "results.requirements.1"
+        ],
+        [
+          "delete",
+          "candidate",
+          "results.coverage.1"
+        ]
+      ]
+    },
+    {
+      "id": "E-unknown",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "results.requirements.0.citation_ids",
+          [
+            "c1",
+            "c99",
+            "c3"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "E-finding",
+      "variant": "A",
+      "operations": [
+        [
+          "duplicate",
+          "results.technical",
+          0,
+          "T1"
+        ]
+      ]
+    },
+    {
+      "id": "E-utf8",
+      "variant": "utf8",
+      "operations": []
+    },
+    {
+      "id": "E-utf8-boundary",
+      "variant": "utf8",
+      "operations": [
+        [
+          "set",
+          "candidate",
+          "citations.9.start_byte",
+          1
+        ],
+        [
+          "set",
+          "candidate",
+          "citations.9.end_byte",
+          2
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-duplicate",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "duplicate"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-duplicate",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "duplicate"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-escaped-duplicate",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "escaped-duplicate"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-escaped-duplicate",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "escaped-duplicate"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-version",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "version"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-version",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "version"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-truncated",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "truncated"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-truncated",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "truncated"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-comment",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "comment"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-comment",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "comment"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-trailing-comma",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "trailing-comma"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-trailing-comma",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "trailing-comma"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-trailing-token",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "trailing-token"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-trailing-token",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "trailing-token"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-root-array",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "root-array"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-root-array",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "root-array"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-unknown",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "unknown"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-unknown",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "unknown"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-type",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "type"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-type",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "type"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-key-case",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "key-case"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-key-case",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "key-case"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-bom",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "bom"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-bom",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "bom"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-invalid-utf8",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "invalid-utf8"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-invalid-utf8",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "invalid-utf8"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-surrogate",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "surrogate"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-surrogate",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "surrogate"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-size",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "size"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-size",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "size"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-depth",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "depth"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-depth",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "depth"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-array-count",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "array-count"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-array-count",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "array-count"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-key-count",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "key-count"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-key-count",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "key-count"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-value-count",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "value-count"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-value-count",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "value-count"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-string-size",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "string-size"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-string-size",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "string-size"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-key-size",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "key-size"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-key-size",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "key-size"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-integer-range",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "integer-range"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-integer-range",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "integer-range"
+        ]
+      ]
+    },
+    {
+      "id": "F-candidate-noninteger",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "candidate",
+          "noninteger"
+        ]
+      ]
+    },
+    {
+      "id": "F-manifest-noninteger",
+      "variant": "A",
+      "operations": [
+        [
+          "json",
+          "manifest",
+          "noninteger"
+        ]
+      ]
+    },
+    {
+      "id": "F-source-encoding",
+      "variant": "A",
+      "operations": [
+        [
+          "source-limit",
+          "encoding"
+        ]
+      ]
+    },
+    {
+      "id": "F-source-size",
+      "variant": "A",
+      "operations": [
+        [
+          "source-limit",
+          "individual"
+        ]
+      ]
+    },
+    {
+      "id": "F-source-total",
+      "variant": "A",
+      "operations": [
+        [
+          "source-limit",
+          "total"
+        ]
+      ]
+    },
+    {
+      "id": "F-label",
+      "variant": "A",
+      "operations": [
+        [
+          "set",
+          "manifest",
+          "provenance.producer_id",
+          "A <b> & \"é\""
+        ],
+        [
+          "set",
+          "candidate",
+          "provenance.producer_id",
+          "A <b> & \"é\""
+        ]
+      ]
+    },
+    {
+      "id": "G-traversal",
+      "variant": "A",
+      "operations": [
+        [
+          "manifest-path",
+          "../outside.txt"
+        ]
+      ]
+    },
+    {
+      "id": "G-absolute",
+      "variant": "A",
+      "operations": [
+        [
+          "manifest-path",
+          "{outside}"
+        ]
+      ]
+    },
+    {
+      "id": "G-ads",
+      "variant": "A",
+      "operations": [
+        [
+          "manifest-path",
+          "head/export.txt:stream"
+        ]
+      ]
+    },
+    {
+      "id": "G-device",
+      "variant": "A",
+      "operations": [
+        [
+          "manifest-path",
+          "NUL.txt"
+        ]
+      ]
+    },
+    {
+      "id": "G-case",
+      "variant": "A",
+      "operations": [
+        [
+          "manifest-path",
+          "Head/export.txt"
+        ]
+      ]
+    },
+    {
+      "id": "G-dot",
+      "variant": "A",
+      "operations": [
+        [
+          "manifest-path",
+          "head/./export.txt"
+        ]
+      ]
+    },
+    {
+      "id": "G-trailing",
+      "variant": "A",
+      "operations": [
+        [
+          "manifest-path",
+          "head/export.txt."
+        ]
+      ]
+    },
+    {
+      "id": "G-junction",
+      "variant": "A",
+      "operations": [
+        [
+          "manifest-path",
+          "linked/outside.txt"
+        ]
+      ]
+    },
+    {
+      "id": "G-candidate-traversal",
+      "variant": "A",
+      "operations": [
+        [
+          "candidate-path",
+          "../outside.txt"
+        ]
+      ]
+    },
+    {
+      "id": "G-candidate-absolute",
+      "variant": "A",
+      "operations": [
+        [
+          "candidate-path",
+          "{outside}"
+        ]
+      ]
+    },
+    {
+      "id": "G-candidate-ads",
+      "variant": "A",
+      "operations": [
+        [
+          "candidate-path",
+          "head/export.txt:stream"
+        ]
+      ]
+    },
+    {
+      "id": "G-candidate-device",
+      "variant": "A",
+      "operations": [
+        [
+          "candidate-path",
+          "NUL.txt"
+        ]
+      ]
+    },
+    {
+      "id": "G-candidate-case",
+      "variant": "A",
+      "operations": [
+        [
+          "candidate-path",
+          "Head/export.txt"
+        ]
+      ]
+    }
+  ]
+}

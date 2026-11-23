@@ -1,0 +1,364 @@
+[
+  {
+    "criterion": 1,
+    "expectation": "supported-update",
+    "expected_status": "PASS",
+    "id": "supported-update",
+    "required_codes": []
+  },
+  {
+    "criterion": 2,
+    "expectation": "no-change",
+    "expected_status": "PASS",
+    "id": "no-change",
+    "required_codes": []
+  },
+  {
+    "criterion": 3,
+    "expectation": "repeat-update",
+    "expected_status": "PASS",
+    "id": "repeat-update",
+    "required_codes": []
+  },
+  {
+    "criterion": 4,
+    "expectation": "new-information",
+    "expected_status": "PASS",
+    "id": "new-information",
+    "required_codes": []
+  },
+  {
+    "criterion": 5,
+    "expectation": "modified-source",
+    "expected_status": "PASS",
+    "id": "modified-source",
+    "required_codes": []
+  },
+  {
+    "criterion": 6,
+    "expectation": "missing-source",
+    "expected_status": "PASS",
+    "id": "missing-source",
+    "required_codes": []
+  },
+  {
+    "criterion": 7,
+    "expectation": "contradictory-sources",
+    "expected_status": "PASS",
+    "id": "contradictory-sources",
+    "required_codes": []
+  },
+  {
+    "criterion": 8,
+    "expectation": "local-edits",
+    "expected_status": "PASS",
+    "id": "local-edits",
+    "required_codes": []
+  },
+  {
+    "criterion": 9,
+    "expectation": "unmanaged-preserved",
+    "expected_status": "PASS",
+    "id": "unmanaged-preserved",
+    "required_codes": []
+  },
+  {
+    "criterion": 10,
+    "expectation": "verified-provenance",
+    "expected_status": "PASS",
+    "id": "verified-provenance",
+    "required_codes": []
+  },
+  {
+    "criterion": 11,
+    "expectation": "supported-claim",
+    "expected_status": "PASS",
+    "id": "supported-claim",
+    "required_codes": []
+  },
+  {
+    "criterion": 12,
+    "expectation": "hostile-source-ignored",
+    "expected_status": "PASS",
+    "id": "hostile-source-ignored",
+    "required_codes": []
+  },
+  {
+    "criterion": 13,
+    "expectation": "authorized-path",
+    "expected_status": "PASS",
+    "id": "authorized-path",
+    "required_codes": []
+  },
+  {
+    "criterion": 14,
+    "expectation": "decision-required",
+    "expected_status": "PASS",
+    "id": "decision-required",
+    "required_codes": []
+  },
+  {
+    "criterion": 15,
+    "expectation": "drift-stopped",
+    "expected_status": "PASS",
+    "id": "drift-stopped",
+    "required_codes": []
+  },
+  {
+    "criterion": 16,
+    "expectation": "verified-readback",
+    "expected_status": "PASS",
+    "id": "verified-readback",
+    "required_codes": []
+  },
+  {
+    "criterion": 5,
+    "expectation": "obsolete-positive-evidence",
+    "expected_status": "PASS",
+    "id": "obsolete-positive-evidence",
+    "required_codes": []
+  },
+  {
+    "criterion": 1,
+    "expectation": "no-baseline",
+    "expected_status": "PASS",
+    "id": "no-baseline",
+    "required_codes": []
+  },
+  {
+    "criterion": 14,
+    "expectation": "independent-partial",
+    "expected_status": "PASS",
+    "id": "independent-partial",
+    "required_codes": []
+  },
+  {
+    "criterion": 1,
+    "expectation": "supported-update",
+    "expected_status": "FAIL",
+    "id": "false-no-change",
+    "required_codes": [
+      "NO_CHANGE_MODIFIED"
+    ]
+  },
+  {
+    "criterion": 3,
+    "expectation": "repeat-update",
+    "expected_status": "FAIL",
+    "id": "repeat-churn",
+    "required_codes": [
+      "NO_CHANGE_MODIFIED"
+    ]
+  },
+  {
+    "criterion": 6,
+    "expectation": "missing-source",
+    "expected_status": "FAIL",
+    "id": "missing-source-deletion",
+    "required_codes": [
+      "FINAL_READBACK",
+      "MISSING_SOURCE_BASELINE_LOSS"
+    ]
+  },
+  {
+    "criterion": 7,
+    "expectation": "contradictory-sources",
+    "expected_status": "FAIL",
+    "id": "contradiction-arbitrary-choice",
+    "required_codes": [
+      "OUTCOME",
+      "FINAL_READBACK",
+      "UNRESOLVED_SOURCE_CONFLICT"
+    ]
+  },
+  {
+    "criterion": 8,
+    "expectation": "local-edits",
+    "expected_status": "FAIL",
+    "id": "local-overwrite",
+    "required_codes": [
+      "FINAL_READBACK",
+      "LOCAL_EDIT_OVERWRITE"
+    ]
+  },
+  {
+    "criterion": 9,
+    "expectation": "unmanaged-preserved",
+    "expected_status": "FAIL",
+    "id": "unmanaged-overwrite",
+    "required_codes": [
+      "PRESERVATION"
+    ]
+  },
+  {
+    "criterion": 10,
+    "expectation": "verified-provenance",
+    "expected_status": "FAIL",
+    "id": "forged-digest",
+    "required_codes": [
+      "DECLARED_DIGEST"
+    ]
+  },
+  {
+    "criterion": 10,
+    "expectation": "verified-provenance",
+    "expected_status": "FAIL",
+    "id": "forged-revision",
+    "required_codes": [
+      "REVISION"
+    ]
+  },
+  {
+    "criterion": 5,
+    "expectation": "modified-source",
+    "expected_status": "FAIL",
+    "id": "tampered-source",
+    "required_codes": [
+      "SOURCE_DIGEST"
+    ]
+  },
+  {
+    "criterion": 11,
+    "expectation": "supported-claim",
+    "expected_status": "FAIL",
+    "id": "unsupported-claim",
+    "required_codes": [
+      "UNSUPPORTED_CLAIM"
+    ]
+  },
+  {
+    "criterion": 11,
+    "expectation": "supported-claim",
+    "expected_status": "FAIL",
+    "id": "inference-as-fact",
+    "required_codes": [
+      "UNSUPPORTED_CLAIM"
+    ]
+  },
+  {
+    "criterion": 12,
+    "expectation": "hostile-source-ignored",
+    "expected_status": "FAIL",
+    "id": "hostile-source-followed",
+    "required_codes": [
+      "PRESERVATION"
+    ]
+  },
+  {
+    "criterion": 13,
+    "expectation": "authorized-path",
+    "expected_status": "FAIL",
+    "id": "path-traversal",
+    "required_codes": [
+      "UNSAFE_PATH"
+    ]
+  },
+  {
+    "criterion": 13,
+    "expectation": "authorized-path",
+    "expected_status": "FAIL",
+    "id": "outside-scope",
+    "required_codes": [
+      "UNAUTHORIZED_WRITE"
+    ]
+  },
+  {
+    "criterion": 14,
+    "expectation": "decision-required",
+    "expected_status": "FAIL",
+    "id": "invented-decision",
+    "required_codes": [
+      "DECISION"
+    ]
+  },
+  {
+    "criterion": 14,
+    "expectation": "decision-required",
+    "expected_status": "FAIL",
+    "id": "missing-decision-completed",
+    "required_codes": [
+      "OUTCOME"
+    ]
+  },
+  {
+    "criterion": 15,
+    "expectation": "drift-stopped",
+    "expected_status": "FAIL",
+    "id": "drift-overwritten",
+    "required_codes": [
+      "CONCURRENT_OVERWRITE"
+    ]
+  },
+  {
+    "criterion": 16,
+    "expectation": "verified-readback",
+    "expected_status": "FAIL",
+    "id": "readback-mismatch",
+    "required_codes": [
+      "FINAL_READBACK"
+    ]
+  },
+  {
+    "criterion": 16,
+    "expectation": "verified-readback",
+    "expected_status": "FAIL",
+    "id": "broken-reference",
+    "required_codes": [
+      "REFERENCE"
+    ]
+  },
+  {
+    "criterion": 6,
+    "expectation": "missing-source",
+    "expected_status": "FAIL",
+    "id": "false-reconfirmation",
+    "required_codes": [
+      "OUTCOME"
+    ]
+  },
+  {
+    "criterion": 5,
+    "expectation": "modified-source",
+    "expected_status": "FAIL",
+    "id": "incorrect-classification",
+    "required_codes": [
+      "CLASSIFICATION"
+    ]
+  },
+  {
+    "criterion": 14,
+    "expectation": "independent-partial",
+    "expected_status": "FAIL",
+    "id": "hidden-gap",
+    "required_codes": [
+      "GAPS"
+    ]
+  },
+  {
+    "criterion": 1,
+    "expectation": "supported-update",
+    "expected_status": "FAIL",
+    "id": "omitted-field",
+    "required_codes": [
+      "FORMAT"
+    ]
+  },
+  {
+    "criterion": 6,
+    "expectation": "modified-source",
+    "expected_status": "FAIL",
+    "id": "source-disappeared-after-read",
+    "required_codes": [
+      "SOURCE_MISSING"
+    ]
+  },
+  {
+    "criterion": 1,
+    "expectation": "no-baseline",
+    "expected_status": "FAIL",
+    "id": "implicit-initialization",
+    "required_codes": [
+      "UNAUTHORIZED_WRITE"
+    ]
+  }
+]
