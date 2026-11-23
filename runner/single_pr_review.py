@@ -811,8 +811,8 @@ def run_track(trial, gold):
                    stage="recovery-action", success=True)
 
 
-PRODUCT_BASE = "e02144b6cee5a28e5f17200cb2489d5b358e4fe9"
-PRODUCT_TREE = "d3bab99c28c6cfe95e065a599beead3c76fa440f"
+PRODUCT_BASE = "abc7f9a4c9ac4a07f587daff906b0ac23d557762"
+PRODUCT_TREE = "5ca3c51ee14f7de92e1e452c9c148d9c43afb4cb"
 ASSETS = "template/.agents/skills/review"
 VALIDATOR_ASSETS = ("ReviewValidation.cs", "ReviewRendering.cs", "manifest.schema.json",
              "review.schema.json", "render-review.ps1", "validate-review.ps1", "RENDERING.md")

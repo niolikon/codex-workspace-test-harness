@@ -1,6 +1,6 @@
 # Changelog
 
-## Initial release
+## v0.1.0
 
 - Added an offline campaign runner with isolated fixture copies, independent artifact checks, and JSON and Markdown reports.
 - Added positive and negative fixtures, Harness self-tests, and release-pinned static checks for Codex Workspace Template.
